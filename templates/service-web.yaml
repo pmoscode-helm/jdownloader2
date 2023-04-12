@@ -1,0 +1,17 @@
+{{- if .Values.service.web.enabled }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "jdownloader2-headless.fullname" . }}-web
+  labels:
+    {{- include "jdownloader2-headless.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.web.type }}
+  ports:
+    - port: {{ .Values.service.web.port }}
+      targetPort: web
+      protocol: TCP
+      name: web
+  selector:
+    {{- include "jdownloader2-headless.selectorLabels" . | nindent 4 }}
+{{- end }}

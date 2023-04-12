@@ -1,0 +1,17 @@
+{{- if .Values.service.vnc.enabled }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "jdownloader2-headless.fullname" . }}-vnc
+  labels:
+    {{- include "jdownloader2-headless.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.vnc.type }}
+  ports:
+    - port: {{ .Values.service.vnc.port }}
+      targetPort: vnc
+      protocol: TCP
+      name: vnc
+  selector:
+    {{- include "jdownloader2-headless.selectorLabels" . | nindent 4 }}
+{{- end }}

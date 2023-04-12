@@ -1,0 +1,36 @@
+apiVersion: v2
+name: jdownloader2-headless
+description: Jdownloader Helm chart for Kubernetes
+
+type: application
+
+version: 0.1.0
+appVersion: "v23.03.1"
+
+home: https://jdownloader.org/
+sources:
+  - https://jdownloader.org/
+
+icon: https://gitlab.com/pmoscodegrp/helm-charts/jdownloader2/raw/master/assets/logo.png
+
+maintainers:
+  - name: pmoscode
+    email: info@pmoscode.de
+
+annotations:
+  artifacthub.io/images: |
+    - name: jdownloadeer2
+      image: jlesage/jdownloader-2:v23.03.1
+      platforms:
+        - linux/amd64
+  artifacthub.io/license: MIT
+  artifacthub.io/links: |
+    - name: Source
+      url: https://gitlab.com/pmoscodegrp/helm-charts/jdownloader2
+    - name: JDownload Homepage
+      url: https://jdownloader.org/
+    - name: support
+      url: https://gitlab.com/pmoscodegrp/helm-charts/jdownloader2/-/issues
+  artifacthub.io/maintainers: |
+    - name: pmoscode
+      email: info@pmoscode.de

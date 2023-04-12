@@ -1,0 +1,17 @@
+{{- if .Values.service.myjd.enabled }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "jdownloader2-headless.fullname" . }}-myjd
+  labels:
+    {{- include "jdownloader2-headless.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.myjd.type }}
+  ports:
+    - port: {{ .Values.service.myjd.port }}
+      targetPort: {{ .Values.service.myjd.port }}
+      protocol: TCP
+      name: myjd
+  selector:
+    {{- include "jdownloader2-headless.selectorLabels" . | nindent 4 }}
+{{- end }}
