@@ -10,21 +10,24 @@ include:
 lint chart:
   image:
     name: alpine/helm:3.11.2
+    entrypoint:
+      - /bin/bash
+      - -c
   stage: test
   script:
-    - lint .
+    - helm lint .
 
 package chart:
   dependencies:
     - lint chart
   image:
     name: alpine/helm:3.11.2
-#    entrypoint:
-#      - /bin/bash
-#      - -c
+    entrypoint:
+      - /bin/bash
+      - -c
   stage: deploy
   script:
-    - package . -u
+    - helm package . -u
 #    - export ARTIFACT=$(find . -type f -iname "*.tgz" | cut -c3-)
   artifacts:
     name: chart.tgz
