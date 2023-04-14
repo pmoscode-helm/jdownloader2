@@ -27,8 +27,6 @@ annotations:
   artifacthub.io/links: |
     - name: Source
       url: https://gitlab.com/pmoscodegrp/helm-charts/jdownloader2
-    - name: JDownload Homepage
-      url: https://jdownloader.org/
     - name: support
       url: https://gitlab.com/pmoscodegrp/helm-charts/jdownloader2/-/issues
   artifacthub.io/maintainers: |
