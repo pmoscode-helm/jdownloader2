@@ -41,7 +41,6 @@ deploy chart:
     name: curlimages/curl:8.00.1
   stage: deploy
   script:
-    - ls -lrt
     - export ARTIFACT=$(find . -type f -iname "*.tgz" | cut -c3-)
-    - echo $ARTIFACT
     - 'curl --request POST --user gitlab-ci-token:$CI_JOB_TOKEN --form "chart=@$ARTIFACT" "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/helm/api/stable/charts"'
+    - 'curl --request POST --user gitlab-ci-token:$CI_JOB_TOKEN --form "chart=@artifacthub-repo.yml" "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/helm/api/stable/charts"'
