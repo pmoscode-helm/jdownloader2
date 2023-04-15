@@ -16,6 +16,7 @@ icon: https://gitlab.com/pmoscodegrp/helm-charts/jdownloader2/-/raw/main/assets/
 maintainers:
   - name: pmoscode
     email: info@pmoscode.de
+    url: https://pmoscode.de
 
 annotations:
   artifacthub.io/images: |
