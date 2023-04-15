@@ -8,9 +8,9 @@ image:
 
 myjd:
   # -- (string) if "service.myjd" is enabled, the email address of the myJdownloader account is required
-  email:
+  email: ""
   # -- (string) if "service.myjd" is enabled, the password of the myJdownloader account is required
-  password:
+  password: ""
 
 persistence:
   # -- enable persistence when true
