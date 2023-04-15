@@ -1,33 +1,52 @@
 image:
+  # -- repository with jdownloader2 image
   repository: jlesage/jdownloader-2
+  # -- current version of the image
   tag: v23.03.1
+  # -- pull policy
   pullPolicy: Always
 
-server:
-  timezone: Europe/Berlin
-  email: e@mail.com
-  password: verysecurepassword:)
+myjd:
+  # -- (string) if "service.myjd" is enabled, the email address of the myJdownloader account is required
+  email:
+  # -- (string) if "service.myjd" is enabled, the password of the myJdownloader account is required
+  password:
 
 persistence:
+  # -- enable persistence when true
   enabled: false
+  # -- default storage size
   size: 20Gi
+  # -- accessMode
   accessMode: ReadWriteOnce
+  # -- actual storageClass
   storageClass: ""
 
+# -- imagePullSecrets (not needed, if default image is used)
 imagePullSecrets: []
+
+# -- @ignore
 nameOverride: ""
+
+# -- @ignore
 fullnameOverride: ""
 
 serviceAccount:
+  # -- enable serviceAccount
   create: true
+  # -- add annotations to serviceAccount
   annotations: {}
+  # -- name of the serviceAccount (will be generated if empty)
   name: ""
 
+# -- @ignore
 podAnnotations: {}
 
+# -- @ignore
 podSecurityContext: {}
   # fsGroup: 2000
 
+# -- @ignore
 securityContext: {}
   # capabilities:
   #   drop:
@@ -37,19 +56,32 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
+  # -- enable the web interface (via browser)
   web:
+    # -- enable "web" service
     enabled: true
+    # -- exposed port of the service
     port: 5800
+    # -- service type
     type: ClusterIP
+  # -- enable VNC connection (via VNC client)
   vnc:
+    # -- enable "VNC" service
     enabled: false
+    # -- exposed port of the service
     port: 5900
+    # -- service type
     type: LoadBalancer
+  # -- enable my.jdownloader.org remote connection
   myjd:
+    # -- enable "myJD" service
     enabled: false
+    # -- exposed port of the service
     port: 3129
+    # -- service type
     type: ClusterIP
 
+# -- Configure ingress for the "web" service. Only considered, if "service.web" is enabled
 ingress:
   enabled: false
   className: ""
@@ -66,6 +98,7 @@ ingress:
   #    hosts:
   #      - chart-example.local
 
+# -- @ignore
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
@@ -78,8 +111,11 @@ resources: {}
   #   cpu: 100m
   #   memory: 128Mi
 
+# -- @ignore
 nodeSelector: {}
 
+# -- @ignore
 tolerations: []
 
+# -- @ignore
 affinity: {}
