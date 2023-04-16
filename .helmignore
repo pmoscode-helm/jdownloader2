@@ -21,3 +21,8 @@
 .idea/
 *.tmproj
 .vscode/
+
+README.md.gotmpl
+.gitlab-ci.yml
+artifacthub-repo.yml
+assets
