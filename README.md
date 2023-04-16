@@ -1,5 +1,6 @@
 # jdownloader2 Helm Chart
 ![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square)
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/jdownloader2)](https://artifacthub.io/packages/search?repo=jdownloader2)
 
 From https://jdownloader.org/:
 > JDownloader is a free, open-source download management tool with a huge community that makes downloading as easy and fast as it should be. Users can start, stop or pause downloads, set bandwith limitations, auto-extract archives and much more. It's an easy-to-extend framework that can save hours of your valuable time every day!
@@ -42,8 +43,8 @@ See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command document
 | image.tag | string | `"v23.03.1"` | current version of the image |
 | imagePullSecrets | list | `[]` | imagePullSecrets (not needed, if default image is used) |
 | ingress | object | `{"annotations":{},"className":"","enabled":false,"hosts":[{"host":"chart-example.local","paths":[{"path":"/","pathType":"ImplementationSpecific"}]}],"tls":[]}` | Configure ingress for the "web" service. Only considered, if "service.web" is enabled |
-| myjd.email | string | `nil` | if "service.myjd" is enabled, the email address of the myJdownloader account is required |
-| myjd.password | string | `nil` | if "service.myjd" is enabled, the password of the myJdownloader account is required |
+| myjd.email | string | `""` | if "service.myjd" is enabled, the email address of the myJdownloader account is required |
+| myjd.password | string | `""` | if "service.myjd" is enabled, the password of the myJdownloader account is required |
 | persistence.accessMode | string | `"ReadWriteOnce"` | accessMode |
 | persistence.enabled | bool | `false` | enable persistence when true |
 | persistence.size | string | `"20Gi"` | default storage size |
