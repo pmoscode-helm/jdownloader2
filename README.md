@@ -7,7 +7,7 @@ From https://jdownloader.org/:
 
 ## Get Repo Info
 
-    helm repo add my-jdownloader https://helm-charts.gitlab.com/pmoscodegrp
+    helm repo add my-jdownloader https://pmoscode-helm.github.io/jdownloader2/
     helm repo update
 
 ## Install chart
