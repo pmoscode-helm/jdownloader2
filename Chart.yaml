@@ -11,7 +11,7 @@ home: https://jdownloader.org/
 sources:
   - https://jdownloader.org/
 
-icon: https://gitlab.com/pmoscodegrp/helm-charts/jdownloader2/-/raw/main/assets/logo.png
+icon: https://github.com/pmoscode/jdownloader2/raw/main/assets/logo.png
 
 maintainers:
   - name: pmoscode
