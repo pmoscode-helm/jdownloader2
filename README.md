@@ -47,6 +47,7 @@ See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command document
 | myjd.password | string | `""` | if "service.myjd" is enabled, the password of the myJdownloader account is required |
 | persistence.accessMode | string | `"ReadWriteOnce"` | accessMode |
 | persistence.enabled | bool | `false` | enable persistence when true |
+| persistence.existingClaim | string | `""` | use an existing claim |
 | persistence.size | string | `"20Gi"` | default storage size |
 | persistence.storageClass | string | `""` | actual storageClass |
 | service.myjd | object | `{"enabled":false,"port":3129,"type":"ClusterIP"}` | enable my.jdownloader.org remote connection |
