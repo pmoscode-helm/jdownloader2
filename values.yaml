@@ -21,6 +21,8 @@ persistence:
   accessMode: ReadWriteOnce
   # -- actual storageClass
   storageClass: ""
+  # -- existingClaim
+  existingClaim: ""
 
 # -- imagePullSecrets (not needed, if default image is used)
 imagePullSecrets: []
