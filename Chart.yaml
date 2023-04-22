@@ -4,7 +4,7 @@ description: jDownloader2 Helm chart for Kubernetes. "JDownloader is a free, ope
 
 type: application
 
-version: 0.1.1
+version: 0.2.0
 appVersion: "v23.03.1"
 
 home: https://jdownloader.org/
