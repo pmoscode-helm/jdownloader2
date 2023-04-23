@@ -23,5 +23,4 @@ yarn-error.log*
 *.sln
 *.sw?
 *.tgz
-
-tests/
+.env
