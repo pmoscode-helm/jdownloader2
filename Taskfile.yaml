@@ -1,0 +1,51 @@
+version: '3'
+
+dotenv: ['.env']
+
+# Prerequisites for this taskfile to run:
+# - https://github.com/helm/chart-releaser
+# - https://github.com/mbenabda/helm-local-chart-version (install it outside an GIT repo!)
+# - https://github.com/norwoodj/helm-docs
+# - https://github.com/helm-unittest/helm-unittest/
+
+tasks:
+  package:
+    desc: Package the Helm Chart
+    cmds:
+      - rm -R .cr-release-packages/
+      - cr package
+
+  upload:
+    desc: Uploads the Helm Chart as release to GitHub
+    cmds:
+      - cr upload -o $GITHUB_USERNAME -r $CHART_NAME -t $GITHUB_TOKEN
+
+  index:
+    desc: Creates or updates the index file and pushes it to the default github pages branch
+    cmds:
+      - cr index -o $GITHUB_USERNAME -r $CHART_NAME -t $GITHUB_TOKEN -i . --push
+
+  bumpPatchVersion:
+    desc: Increments the charts patch-version
+    cmds:
+      - helm local-chart-version bump -c . -s patch
+
+  bumpMinorVersion:
+    desc: Increments the charts minor-version
+    cmds:
+      - helm local-chart-version bump -c . -s minor
+
+  bumpMajorVersion:
+    desc: Increments the charts major-version
+    cmds:
+      - helm local-chart-version bump -c . -s major
+
+  unittest:
+    desc: Run all unittests
+    cmds:
+      - helm unittest .
+
+  readme:
+    desc: Build readme
+    cmds:
+      - helm-docs
