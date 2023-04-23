@@ -1,0 +1,52 @@
+suite: test default pvc
+chart:
+  version: 9.9.9+test
+  appVersion: 9.9.9
+tests:
+  - it: should have correct metadata
+    template: templates/pvc.yaml
+    set:
+      persistence.enabled: true
+      persistence.existingClaim: false
+    asserts:
+      - hasDocuments:
+          count: 1
+      - isAPIVersion:
+          of: v1
+      - isKind:
+          of: PersistentVolumeClaim
+      - equal:
+          path: metadata.name
+          value: RELEASE-NAME-jdownloader2-data
+
+  - it: should render pvc correctly when enabled and no existingClaim set
+    template: templates/pvc.yaml
+    set:
+      persistence.enabled: true
+      persistence.existingClaim: false
+    asserts:
+      - notExists:
+          path: spec.storageClassName
+      - exists:
+          path: spec.accessModes
+      - equal:
+          path: spec.accessModes[0]
+          value: ReadWriteOnce
+
+  - it: should not render when not enabled
+    template: templates/pvc.yaml
+    set:
+      persistence.enabled: false
+      persistence.existingClaim: false
+    asserts:
+      - hasDocuments:
+          count: 0
+
+  - it: should not render when enabled but existingClaim is set
+    template: templates/pvc.yaml
+    set:
+      persistence.enabled: false
+      persistence.existingClaim: true
+    asserts:
+      - hasDocuments:
+          count: 0

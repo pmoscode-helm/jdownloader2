@@ -1,0 +1,38 @@
+suite: test deployment when persistence is enabled
+chart:
+  version: 9.9.9+test
+  appVersion: 9.9.9
+tests:
+  - it: should render correct content when using not existing PVC
+    template: templates/deployment.yaml
+    set:
+      persistence.enabled: true
+    documentIndex: 0
+    asserts:
+      - hasDocuments:
+          count: 1
+      - exists:
+          path: spec.template.spec.volumes[0].persistentVolumeClaim
+      - equal:
+          path: spec.template.spec.volumes[0].persistentVolumeClaim.claimName
+          value: RELEASE-NAME-jdownloader2-data
+      - lengthEqual:
+          path: spec.template.spec.containers[0].volumeMounts
+          count: 2
+
+  - it: should render correct content when using existing PVC
+    template: templates/deployment.yaml
+    set:
+      persistence.enabled: true
+      persistence.existingClaim: "test"
+    asserts:
+      - hasDocuments:
+          count: 1
+      - exists:
+          path: spec.template.spec.volumes[0].persistentVolumeClaim
+      - equal:
+          path: spec.template.spec.volumes[0].persistentVolumeClaim.claimName
+          value: test
+      - lengthEqual:
+          path: spec.template.spec.containers[0].volumeMounts
+          count: 2

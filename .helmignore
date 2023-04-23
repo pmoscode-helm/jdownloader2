@@ -26,3 +26,4 @@ README.md.gotmpl
 .gitlab-ci.yml
 artifacthub-repo.yml
 assets
+tests

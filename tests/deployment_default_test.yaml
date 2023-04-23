@@ -1,0 +1,62 @@
+suite: test default deployment
+chart:
+  version: 9.9.9+test
+  appVersion: 9.9.9
+tests:
+  - it: should have correct metadata
+    template: templates/deployment.yaml
+    asserts:
+      - hasDocuments:
+          count: 1
+      - isAPIVersion:
+          of: apps/v1
+      - isKind:
+          of: Deployment
+      - equal:
+          path: metadata.labels["app.kubernetes.io/version"]
+          value: 9.9.9
+      - equal:
+          path: spec.template.spec.serviceAccountName
+          value: RELEASE-NAME-jdownloader2
+      - equal:
+          path: metadata.labels["helm.sh/chart"]
+          value: jdownloader2-9.9.9_test
+
+  - it: should render volumes and volumeMounts correctly
+    template: templates/deployment.yaml
+    asserts:
+      - exists:
+          path: spec.template.spec.volumes[0].emptyDir
+      - lengthEqual:
+          path: spec.template.spec.containers[0].volumeMounts
+          count: 2
+
+  - it: should render correct container content
+    template: templates/deployment.yaml
+    asserts:
+      - exists:
+          path: spec.template.spec.containers
+      - exists:
+          path: spec.template.spec.containers[0].readinessProbe
+      - exists:
+          path: spec.template.spec.containers[0].livenessProbe
+      - contains:
+          path: spec.template.spec.containers[0].ports
+          content:
+            name: web
+            containerPort: 5800
+            protocol: TCP
+      - equal:
+          path: spec.template.spec.containers[0].image
+          value: jlesage/jdownloader-2:v23.03.1
+      - isNotNullOrEmpty:
+          path: spec.template.spec.containers[0]
+      - lengthEqual:
+          path: spec.template.spec.containers[0].ports
+          count: 1
+      - isNullOrEmpty:
+          path: spec.template.spec.containers[0].resources
+      - notExists:
+          path: spec.template.spec.containers[0].env
+      - notExists:
+          path: spec.template.spec.containers[1]
