@@ -1,5 +1,5 @@
 # jdownloader2 Helm Chart
-![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square)
+![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square)
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/jdownloader2)](https://artifacthub.io/packages/search?repo=jdownloader2)
 
 From https://jdownloader.org/:
@@ -71,3 +71,8 @@ See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command document
 | Name | Email | Url |
 | ---- | ------ | --- |
 | pmoscode | <info@pmoscode.de> | <https://pmoscode.de> |
+
+## Contributing
+
+If you want to add features or bugfixes, please open an issue (either feature or bug) and provide also an unittest (https://github.com/helm-unittest/helm-unittest).
+To make things easier, you can use taskfile (https://taskfile.dev/) to get a small shortcut for some useful commands.
