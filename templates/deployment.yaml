@@ -18,6 +18,38 @@ spec:
       labels:
         {{- include "jdownloader2-headless.selectorLabels" . | nindent 8 }}
     spec:
+      {{- if .Values.dnsPolicy }}
+      dnsPolicy: {{ .Values.dnsPolicy }}
+      {{- end }}
+      {{- if eq .Values.dnsPolicy "None" }}
+      dnsConfig:
+        nameservers:
+          {{- if not .Values.dnsConfig.nameservers }}
+          {{- fail ".Values.dnsConfig.nameservers is required when .Values.dnsPolicy is set to None" }}
+          {{- end }}
+          {{- range .Values.dnsConfig.nameservers }}
+          - {{ . }}
+          {{- end }}
+        {{- if .Values.dnsConfig.searches}}
+        searches:
+          {{- range .Values.dnsConfig.searches }}
+          - {{ . }}
+          {{- end }}
+        {{- end }}
+      {{- end }}
+      {{- if or .Values.dnsConfig.nameservers .Values.dnsConfig.searches }}
+      dnsConfig:
+        nameservers:
+          {{- range .Values.dnsConfig.nameservers }}
+          - {{ . }}
+          {{- end }}
+        {{- if .Values.dnsConfig.searches}}
+        searches:
+          {{- range .Values.dnsConfig.searches }}
+          - {{ . }}
+          {{- end }}
+        {{- end }}
+      {{- end }}
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}

@@ -6,6 +6,14 @@ image:
   # -- pull policy
   pullPolicy: Always
 
+# -- dnsPolicy
+dnsPolicy: ""
+
+# -- dnsConfig. Only considered, if "dnsPolicy" is set to "None"
+dnsConfig: 
+  nameservers: []
+  searches: []
+
 myjd:
   # -- (string) if "service.myjd" is enabled, the email address of the myJdownloader account is required
   email: ""
