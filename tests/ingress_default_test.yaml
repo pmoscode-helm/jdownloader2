@@ -1,0 +1,18 @@
+suite: test default ingress
+chart:
+  version: 9.9.9+test
+  appVersion: 9.9.9
+tests:
+  - it: shouldn't render
+    template: templates/ingress-web.yaml
+    asserts:
+      - hasDocuments:
+          count: 0
+
+  - it: shouldn't render, if service is disabled
+    template: templates/ingress-web.yaml
+    set:
+      service.web.enabled: false
+    asserts:
+      - hasDocuments:
+          count: 0

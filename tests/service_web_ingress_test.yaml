@@ -1,0 +1,18 @@
+suite: test service-web when ingress enabled
+chart:
+  version: 9.9.9+test
+  appVersion: 9.9.9
+tests:
+  - it: should set type "ClusterIP"
+    template: templates/service-web.yaml
+    set:
+      ingress.enabled: true
+    asserts:
+      - exists:
+          path: spec.type
+      - equal:
+          path: spec.type
+          value: ClusterIP
+      - lengthEqual:
+          path: spec.ports
+          count: 1

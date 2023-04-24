@@ -1,4 +1,4 @@
-suite: test deployment when persistence is enabled
+suite: test deployment with persistence enabled
 chart:
   version: 9.9.9+test
   appVersion: 9.9.9

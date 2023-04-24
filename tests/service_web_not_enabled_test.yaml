@@ -1,10 +1,12 @@
-suite: test default pvc
+suite: test service-web when enabled
 chart:
   version: 9.9.9+test
   appVersion: 9.9.9
 tests:
   - it: should not render
-    template: templates/pvc.yaml
+    template: templates/service-web.yaml
+    set:
+      service.web.enabled: false
     asserts:
       - hasDocuments:
           count: 0

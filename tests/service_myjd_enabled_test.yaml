@@ -1,0 +1,33 @@
+suite: test service-myjd enabled
+chart:
+  version: 9.9.9+test
+  appVersion: 9.9.9
+tests:
+  - it: should render
+    template: templates/service-myjd.yaml
+    set:
+      service.myjd.enabled: true
+    asserts:
+      - hasDocuments:
+          count: 1
+      - isAPIVersion:
+          of: v1
+      - isKind:
+          of: Service
+      - equal:
+          path: metadata.name
+          value: RELEASE-NAME-jdownloader2-myjd
+
+  - it: should set type "LoadBalancer"
+    template: templates/service-myjd.yaml
+    set:
+      service.myjd.enabled: true
+    asserts:
+      - exists:
+          path: spec.type
+      - equal:
+          path: spec.type
+          value: ClusterIP
+      - lengthEqual:
+          path: spec.ports
+          count: 1
