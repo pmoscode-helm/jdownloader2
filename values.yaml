@@ -64,24 +64,20 @@ service:
     enabled: true
     # -- exposed port of the service
     port: 5800
-    # -- service type
-    type: ClusterIP
+    # -- service type (only used when ingress.enabled: false)
+    type: LoadBalancer
   # -- enable VNC connection (via VNC client)
   vnc:
     # -- enable "VNC" service
     enabled: false
     # -- exposed port of the service
     port: 5900
-    # -- service type
-    type: LoadBalancer
   # -- enable my.jdownloader.org remote connection
   myjd:
     # -- enable "myJD" service
     enabled: false
     # -- exposed port of the service
     port: 3129
-    # -- service type
-    type: ClusterIP
 
 # -- Configure ingress for the "web" service. Only considered, if "service.web" is enabled
 ingress:
