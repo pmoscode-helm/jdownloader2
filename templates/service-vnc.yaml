@@ -6,7 +6,7 @@ metadata:
   labels:
     {{- include "jdownloader2-headless.labels" . | nindent 4 }}
 spec:
-  type: {{ .Values.service.vnc.type }}
+  type: LoadBalancer
   ports:
     - port: {{ .Values.service.vnc.port }}
       targetPort: vnc
