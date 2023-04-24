@@ -18,6 +18,43 @@ entries:
           email: info@pmoscode.de
     apiVersion: v2
     appVersion: v23.03.1
+    created: "2023-04-24T22:13:21.28938579+02:00"
+    description: jDownloader2 Helm chart for Kubernetes. "JDownloader is a free, open-source
+      download management tool with a huge community that makes downloading as easy
+      and fast as it should be. Users can start, stop or pause downloads, set bandwith
+      limitations, auto-extract archives and much more. It's an easy-to-extend framework
+      that can save hours of your valuable time every day!"
+    digest: 421954773f3e30638cf05b60972ca9794344f1f54a46637c5a7663f4949a9a9a
+    home: https://jdownloader.org/
+    icon: https://github.com/pmoscode/jdownloader2/raw/main/assets/logo.png
+    maintainers:
+    - email: info@pmoscode.de
+      name: pmoscode
+      url: https://pmoscode.de
+    name: jdownloader2
+    sources:
+    - https://jdownloader.org/
+    type: application
+    urls:
+    - https://github.com/pmoscode-helm/jdownloader2/releases/download/jdownloader2-0.3.0/jdownloader2-0.3.0.tgz
+    version: 0.3.0
+  - annotations:
+      artifacthub.io/images: |
+        - name: jdownloader2
+          image: jlesage/jdownloader-2:v23.03.1
+          platforms:
+            - linux/amd64
+      artifacthub.io/license: MIT
+      artifacthub.io/links: |
+        - name: Source
+          url: https://github.com/pmoscode-helm/jdownloader2
+        - name: support
+          url: https://github.com/pmoscode-helm/jdownloader2/issues
+      artifacthub.io/maintainers: |
+        - name: pmoscode
+          email: info@pmoscode.de
+    apiVersion: v2
+    appVersion: v23.03.1
     created: "2023-04-22T19:13:30.01579073+02:00"
     description: jDownloader2 Helm chart for Kubernetes. "JDownloader is a free, open-source
       download management tool with a huge community that makes downloading as easy
@@ -112,4 +149,4 @@ entries:
     urls:
     - https://github.com/pmoscode/jdownloader2/releases/download/jdownloader2-0.1.0/jdownloader2-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-22T19:13:30.015805478+02:00"
+generated: "2023-04-24T22:13:21.289407041+02:00"
