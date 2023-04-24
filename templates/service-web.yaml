@@ -6,7 +6,11 @@ metadata:
   labels:
     {{- include "jdownloader2-headless.labels" . | nindent 4 }}
 spec:
+  {{- if and .Values.ingress.enabled }}
+  type: ClusterIP
+  {{- else }}
   type: {{ .Values.service.web.type }}
+  {{- end }}
   ports:
     - port: {{ .Values.service.web.port }}
       targetPort: web
