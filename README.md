@@ -1,5 +1,5 @@
 # jdownloader2 Helm Chart
-![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square)
+![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat-square)
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/jdownloader2)](https://artifacthub.io/packages/search?repo=jdownloader2)
 
 From https://jdownloader.org/:
@@ -50,18 +50,16 @@ See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command document
 | persistence.existingClaim | string | `""` | use an existing claim |
 | persistence.size | string | `"20Gi"` | default storage size |
 | persistence.storageClass | string | `""` | actual storageClass |
-| service.myjd | object | `{"enabled":false,"port":3129,"type":"ClusterIP"}` | enable my.jdownloader.org remote connection |
+| service.myjd | object | `{"enabled":false,"port":3129}` | enable my.jdownloader.org remote connection |
 | service.myjd.enabled | bool | `false` | enable "myJD" service |
 | service.myjd.port | int | `3129` | exposed port of the service |
-| service.myjd.type | string | `"ClusterIP"` | service type |
-| service.vnc | object | `{"enabled":false,"port":5900,"type":"LoadBalancer"}` | enable VNC connection (via VNC client) |
+| service.vnc | object | `{"enabled":false,"port":5900}` | enable VNC connection (via VNC client) |
 | service.vnc.enabled | bool | `false` | enable "VNC" service |
 | service.vnc.port | int | `5900` | exposed port of the service |
-| service.vnc.type | string | `"LoadBalancer"` | service type |
-| service.web | object | `{"enabled":true,"port":5800,"type":"ClusterIP"}` | enable the web interface (via browser) |
+| service.web | object | `{"enabled":true,"port":5800,"type":"LoadBalancer"}` | enable the web interface (via browser) |
 | service.web.enabled | bool | `true` | enable "web" service |
 | service.web.port | int | `5800` | exposed port of the service |
-| service.web.type | string | `"ClusterIP"` | service type |
+| service.web.type | string | `"LoadBalancer"` | service type (only used when ingress.enabled: false) |
 | serviceAccount.annotations | object | `{}` | add annotations to serviceAccount |
 | serviceAccount.create | bool | `true` | enable serviceAccount |
 | serviceAccount.name | string | `""` | name of the serviceAccount (will be generated if empty) |
