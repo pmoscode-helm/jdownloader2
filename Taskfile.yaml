@@ -24,6 +24,7 @@ tasks:
     desc: Creates or updates the index file and pushes it to the default github pages branch
     cmds:
       - cr index -o $GITHUB_USERNAME -r $CHART_NAME -t $GITHUB_TOKEN -i . --push
+      - rm index.yaml
 
   bumpPatchVersion:
     desc: Increments the charts patch-version
