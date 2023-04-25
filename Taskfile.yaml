@@ -11,8 +11,11 @@ dotenv: ['.env']
 
 tasks:
   package:
-    desc: Package the Helm Chart
+    desc: Package the Helm Chart (Don't forget to bump proper version)
     cmds:
+      - task: unittest
+      - task: readme
+      - task: changelog
       - rm -R .cr-release-packages/
       - cr package
 
@@ -26,6 +29,13 @@ tasks:
     cmds:
       - cr index -o $GITHUB_USERNAME -r $CHART_NAME -t $GITHUB_TOKEN -i . --push
       - rm index.yaml
+
+  publish:
+    desc: Execute all steps for a Helm Chart deployment on GitHub-Pages (Don't forget to bump proper version)
+    cmds:
+      - task: package
+      - task: upload
+      - task: index
 
   bumpPatchVersion:
     desc: Increments the charts patch-version

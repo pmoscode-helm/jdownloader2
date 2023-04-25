@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Features
 
+- Add task to generate CHANGELOG.md ([19254bd](https://github.com/pmoscode-helm/jdownloader2/commit/19254bd5ad83dad3213ef826eb0607ce50f359cc) by Peter Motzko).
+- Add generated CHANGELOG.md ([381563a](https://github.com/pmoscode-helm/jdownloader2/commit/381563aa43a68d6c921710733830bfb68a87def4) by Peter Motzko).
 - Remove index.yaml after "cr index" is done ([7421138](https://github.com/pmoscode-helm/jdownloader2/commit/74211380cbfdcba249e0d34dd3dbe36da0615312) by Peter Motzko).
 
 <!-- insertion marker -->
