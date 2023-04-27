@@ -10,8 +10,8 @@ on:
 
 jobs:
   build:
-    runs-on: alpine/helm:3.11.3
-
+    runs-on: ubuntu-latest
+    container: alpine/helm:3.11.3
     steps:
       - uses: actions/checkout@v3
       - name: Install unittest bin
