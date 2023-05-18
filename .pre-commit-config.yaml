@@ -1,0 +1,24 @@
+default_stages:
+  - commit
+default_install_hook_types:
+  - pre-commit
+  - commit-msg
+fail_fast: true
+repos:
+  - repo: local
+    hooks:
+      - id: generate changelog
+        name: generate changelog
+        entry: scripts/check-changelog-hook.sh
+        language: script
+        types: [ file ]
+        pass_filenames: true
+        require_serial: true
+        stages:
+          - commit
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v2.2.0
+    hooks:
+      - id: conventional-pre-commit
+        stages:
+          - commit-msg

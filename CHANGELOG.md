@@ -12,9 +12,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Features
 
+- Add unittest action ([e8e010a](https://github.com/pmoscode-helm/jdownloader2/commit/e8e010ace4f95715a07764074686203122b1e3a3) by Peter Motzko).
+- Set proper name in .env-template ([2da248a](https://github.com/pmoscode-helm/jdownloader2/commit/2da248ad5bf101a03b25fa74a979393d8842c055) by Peter Motzko).
+- Add code of conduct and contributing ([4f12898](https://github.com/pmoscode-helm/jdownloader2/commit/4f128980552c4fe133b559b06ce639d60dec2f15) by Peter Motzko).
+- update README.md ([ceaa9c7](https://github.com/pmoscode-helm/jdownloader2/commit/ceaa9c7f854b4363018c784a4f5f579fdfb37daa) by Peter Motzko).
+- Add task to publish the chart to GitHub pages (aka one-click-publish) ([6fd1be6](https://github.com/pmoscode-helm/jdownloader2/commit/6fd1be6bd95809405213c843c942cd354ee8a103) by Peter Motzko).
 - Add task to generate CHANGELOG.md ([19254bd](https://github.com/pmoscode-helm/jdownloader2/commit/19254bd5ad83dad3213ef826eb0607ce50f359cc) by Peter Motzko).
 - Add generated CHANGELOG.md ([381563a](https://github.com/pmoscode-helm/jdownloader2/commit/381563aa43a68d6c921710733830bfb68a87def4) by Peter Motzko).
 - Remove index.yaml after "cr index" is done ([7421138](https://github.com/pmoscode-helm/jdownloader2/commit/74211380cbfdcba249e0d34dd3dbe36da0615312) by Peter Motzko).
+
+### Bug Fixes
+
+- wrong config ([3c0906e](https://github.com/pmoscode-helm/jdownloader2/commit/3c0906e59e08abbe4a8b3a32cb5a32439b8e3f2d) by Peter Motzko).
 
 <!-- insertion marker -->
 ## [jdownloader2-0.3.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.3.0) - 2023-04-24
