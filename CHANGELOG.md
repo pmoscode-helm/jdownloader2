@@ -28,6 +28,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Bug Fixes
 
+- typo ([3be102f](https://github.com/pmoscode-helm/jdownloader2/commit/3be102f28c8b8fafd7760e693766c5f2f71d3bd8) by Peter Motzko).
+- try fix error in Kubesec scan ([044f1c7](https://github.com/pmoscode-helm/jdownloader2/commit/044f1c716434eb697d89ddab4ded7df1e5ddde9b) by Peter Motzko).
 - missing slash in CONTRIBUTING.md ([d501be9](https://github.com/pmoscode-helm/jdownloader2/commit/d501be9a405cb17fdf34d6d8b4273aec373b25b4) by Peter Motzko).
 - wrong config ([3c0906e](https://github.com/pmoscode-helm/jdownloader2/commit/3c0906e59e08abbe4a8b3a32cb5a32439b8e3f2d) by Peter Motzko).
 

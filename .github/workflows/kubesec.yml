@@ -27,13 +27,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Collect all yaml
-        run: find ./templates -type f -name "*.yaml" -exec sh -c "echo '---' | cat - {}" \; > squashed_templates.yaml
+      - name: Set up Helm
+        uses: azure/setup-helm@v3
+        with:
+          version: v3.11.2
+
+      - name: Collect all generated templates
+        run: helm template . > templates.yaml
 
       - name: Run kubesec scanner
         uses: controlplaneio/kubesec-action@main
         with:
-          input: squashed_templates.yaml
+          input: templates.yaml
           output: kubesec-results.sarif
           exit-code: "0"
 
