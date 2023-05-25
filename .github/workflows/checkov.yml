@@ -34,6 +34,7 @@ jobs:
           framework: helm
           quiet: true
           soft_fail: true
+          enable_secrets_scan_all_files: true
           # This will add both a CLI output to the console and create a results.sarif file
           output_format: cli,sarif
           output_file_path: console,results.sarif
