@@ -29,7 +29,7 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the
-[jDownloader 2 Helm Chart Code of Conduct](https://github.com/pmoscode-helm/jdownloader2blob/master/CODE_OF_CONDUCT.md).
+[jDownloader 2 Helm Chart Code of Conduct](https://github.com/pmoscode-helm/jdownloader2/blob/master/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code. Please report unacceptable behavior
 to <info@pmoscode.de>.
 
