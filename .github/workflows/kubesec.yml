@@ -36,7 +36,7 @@ jobs:
         run: helm template . > templates.yaml
 
       - name: Run kubesec scanner
-        uses: controlplaneio/kubesec-action@main
+        uses: controlplaneio/kubesec-action@v0.0.2
         with:
           input: templates.yaml
           format: template
