@@ -31,7 +31,7 @@ jobs:
         run: find ./templates -type f -name "*.yaml" -exec sh -c "echo '---' | cat - {}" \; > squashed_templates.yaml
 
       - name: Run kubesec scanner
-        uses: controlplaneio/kubesec-action@master
+        uses: controlplaneio/kubesec-action@main
         with:
           input: squashed_templates.yaml
           output: kubesec-results.sarif
