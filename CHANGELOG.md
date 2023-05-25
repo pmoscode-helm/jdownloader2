@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Features
 
+- add pre-commit hook (conventional commit) and post-commit hook (generate changelog) ([6ce7e67](https://github.com/pmoscode-helm/jdownloader2/commit/6ce7e67c19b181e3ef3cf1aff96193cc10768029) by Peter Motzko).
 - Add unittest action ([e8e010a](https://github.com/pmoscode-helm/jdownloader2/commit/e8e010ace4f95715a07764074686203122b1e3a3) by Peter Motzko).
 - Set proper name in .env-template ([2da248a](https://github.com/pmoscode-helm/jdownloader2/commit/2da248ad5bf101a03b25fa74a979393d8842c055) by Peter Motzko).
 - Add code of conduct and contributing ([4f12898](https://github.com/pmoscode-helm/jdownloader2/commit/4f128980552c4fe133b559b06ce639d60dec2f15) by Peter Motzko).
