@@ -28,6 +28,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Bug Fixes
 
+- use generated templates ror kubesec ([1a7e8dd](https://github.com/pmoscode-helm/jdownloader2/commit/1a7e8dd27e163fb7020f7b8e3e60b5a5dc90db5e) by Peter Motzko).
 - typo ([3be102f](https://github.com/pmoscode-helm/jdownloader2/commit/3be102f28c8b8fafd7760e693766c5f2f71d3bd8) by Peter Motzko).
 - try fix error in Kubesec scan ([044f1c7](https://github.com/pmoscode-helm/jdownloader2/commit/044f1c716434eb697d89ddab4ded7df1e5ddde9b) by Peter Motzko).
 - missing slash in CONTRIBUTING.md ([d501be9](https://github.com/pmoscode-helm/jdownloader2/commit/d501be9a405cb17fdf34d6d8b4273aec373b25b4) by Peter Motzko).

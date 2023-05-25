@@ -39,6 +39,8 @@ jobs:
         uses: controlplaneio/kubesec-action@main
         with:
           input: templates.yaml
+          format: template
+          template: template/sarif.tpl
           output: kubesec-results.sarif
           exit-code: "0"
 
