@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Features
 
+- squash all helm templates to one for Kubesec scan ([f25144b](https://github.com/pmoscode-helm/jdownloader2/commit/f25144bb7658633f7d7d34038e8e5c10f07fadf4) by Peter Motzko).
 - make kubesec.yml malual triggerable ([79e29d6](https://github.com/pmoscode-helm/jdownloader2/commit/79e29d6d20b160a42eebcf3f66b2ca02195e8508) by Peter Motzko).
 - Create kubesec.yml ([ff491dd](https://github.com/pmoscode-helm/jdownloader2/commit/ff491dd40c5e81188b89d4ca796151abacbc6a05) by Peter Motzko).
 - publish test results ([b7b0d01](https://github.com/pmoscode-helm/jdownloader2/commit/b7b0d01b162b3522de2485d99d39e0c741a5dd02) by Peter Motzko).
