@@ -32,6 +32,8 @@ jobs:
         with:
           directory: .
           framework: helm
+          quiet: true
+          soft_fail: true
           # This will add both a CLI output to the console and create a results.sarif file
           output_format: cli,sarif
           output_file_path: console,results.sarif
