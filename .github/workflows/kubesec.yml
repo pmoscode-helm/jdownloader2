@@ -27,10 +27,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Collect all yaml
+        run: find ./templates -type f -name "*.yaml" -exec sh -c "echo '---' | cat - {}" \; > squashed_templates.yaml
+
       - name: Run kubesec scanner
         uses: controlplaneio/kubesec-action@43d0ddff5ffee89a6bb9f29b64cd865411137b14
         with:
-          input: file.yaml # specify configuration file to scan here
+          input: squashed_templates.yaml
           format: template
           template: template/sarif.tpl
           output: kubesec-results.sarif

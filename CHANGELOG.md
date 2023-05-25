@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Features
 
+- make kubesec.yml malual triggerable ([79e29d6](https://github.com/pmoscode-helm/jdownloader2/commit/79e29d6d20b160a42eebcf3f66b2ca02195e8508) by Peter Motzko).
+- Create kubesec.yml ([ff491dd](https://github.com/pmoscode-helm/jdownloader2/commit/ff491dd40c5e81188b89d4ca796151abacbc6a05) by Peter Motzko).
 - publish test results ([b7b0d01](https://github.com/pmoscode-helm/jdownloader2/commit/b7b0d01b162b3522de2485d99d39e0c741a5dd02) by Peter Motzko).
 - add pre-commit hook (conventional commit) and post-commit hook (generate changelog) ([6ce7e67](https://github.com/pmoscode-helm/jdownloader2/commit/6ce7e67c19b181e3ef3cf1aff96193cc10768029) by Peter Motzko).
 - Add unittest action ([e8e010a](https://github.com/pmoscode-helm/jdownloader2/commit/e8e010ace4f95715a07764074686203122b1e3a3) by Peter Motzko).
@@ -25,6 +27,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Bug Fixes
 
+- missing slash in CONTRIBUTING.md ([d501be9](https://github.com/pmoscode-helm/jdownloader2/commit/d501be9a405cb17fdf34d6d8b4273aec373b25b4) by Peter Motzko).
 - wrong config ([3c0906e](https://github.com/pmoscode-helm/jdownloader2/commit/3c0906e59e08abbe4a8b3a32cb5a32439b8e3f2d) by Peter Motzko).
 
 <!-- insertion marker -->
