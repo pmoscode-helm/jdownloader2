@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Features
 
+- add scanning for secrets ([b7302e6](https://github.com/pmoscode-helm/jdownloader2/commit/b7302e6ec9e7ad4c18ed7895e4d2c70692fd6735) by Peter Motzko).
+- add checkov api key ([8b0d50b](https://github.com/pmoscode-helm/jdownloader2/commit/8b0d50b8e07346a1e9bca431e2e98fab23fbfaaa) by Peter Motzko).
+- change kubesec to checkov ([412810b](https://github.com/pmoscode-helm/jdownloader2/commit/412810b8d2437c2c5d399e975effe525561f54c2) by Peter Motzko).
 - squash all helm templates to one for Kubesec scan ([f25144b](https://github.com/pmoscode-helm/jdownloader2/commit/f25144bb7658633f7d7d34038e8e5c10f07fadf4) by Peter Motzko).
 - make kubesec.yml malual triggerable ([79e29d6](https://github.com/pmoscode-helm/jdownloader2/commit/79e29d6d20b160a42eebcf3f66b2ca02195e8508) by Peter Motzko).
 - Create kubesec.yml ([ff491dd](https://github.com/pmoscode-helm/jdownloader2/commit/ff491dd40c5e81188b89d4ca796151abacbc6a05) by Peter Motzko).
@@ -28,6 +31,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Bug Fixes
 
+- don't fail job when checks fail and only show failed checks ([843ab21](https://github.com/pmoscode-helm/jdownloader2/commit/843ab215d2f40904e3867cbaada636c0bf056331) by Peter Motzko).
+- change version for kubesec action ([b68799b](https://github.com/pmoscode-helm/jdownloader2/commit/b68799b59c09406d86fb12095791103b4581bdc7) by Peter Motzko).
+- use correct template ([a81ee37](https://github.com/pmoscode-helm/jdownloader2/commit/a81ee378527dc5ef31d373bc9f8bbdfef4027704) by Peter Motzko).
 - use generated templates ror kubesec ([1a7e8dd](https://github.com/pmoscode-helm/jdownloader2/commit/1a7e8dd27e163fb7020f7b8e3e60b5a5dc90db5e) by Peter Motzko).
 - typo ([3be102f](https://github.com/pmoscode-helm/jdownloader2/commit/3be102f28c8b8fafd7760e693766c5f2f71d3bd8) by Peter Motzko).
 - try fix error in Kubesec scan ([044f1c7](https://github.com/pmoscode-helm/jdownloader2/commit/044f1c716434eb697d89ddab4ded7df1e5ddde9b) by Peter Motzko).
