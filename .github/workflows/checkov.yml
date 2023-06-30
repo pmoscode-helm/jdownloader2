@@ -35,19 +35,11 @@ jobs:
           quiet: true
           soft_fail: true
           enable_secrets_scan_all_files: true
-          # This will add both a CLI output to the console and create a results.sarif file
           output_format: cli,sarif
           output_file_path: console,results.sarif
-          # api-key: ${{ secrets.BC_API_KEY }}
 
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
-
-        # Results are generated only on a success or failure
-        # this is required since GitHub by default won't run the next step
-        # when the previous one has failed. Security checks that do not pass will 'fail'.
-        # An alternative is to add `continue-on-error: true` to the previous step
-        # Or 'soft_fail: true' to checkov.
         if: success() || failure()
         with:
           sarif_file: results.sarif
