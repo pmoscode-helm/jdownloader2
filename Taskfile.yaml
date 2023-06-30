@@ -3,6 +3,7 @@ version: '3'
 dotenv: ['.env']
 
 # Prerequisites for this taskfile to run:
+# - https://pre-commit.com/#install
 # - https://github.com/helm/chart-releaser
 # - https://github.com/mbenabda/helm-local-chart-version (install it outside an GIT repo!)
 # - https://github.com/norwoodj/helm-docs

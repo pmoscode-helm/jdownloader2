@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Features
 
+- remove api key for "bridgecrew.cloud" ([8f5b6c6](https://github.com/pmoscode-helm/jdownloader2/commit/8f5b6c6b844eb6904e3d2a41fe12010ad5c35483) by Peter Motzko).
+- add ".env" description to readme file ([a72a1ad](https://github.com/pmoscode-helm/jdownloader2/commit/a72a1ad8c9b8f667d35aed2d7b848373e61b6fe8) by Peter Motzko).
 - add scanning for secrets ([b7302e6](https://github.com/pmoscode-helm/jdownloader2/commit/b7302e6ec9e7ad4c18ed7895e4d2c70692fd6735) by Peter Motzko).
 - add checkov api key ([8b0d50b](https://github.com/pmoscode-helm/jdownloader2/commit/8b0d50b8e07346a1e9bca431e2e98fab23fbfaaa) by Peter Motzko).
 - change kubesec to checkov ([412810b](https://github.com/pmoscode-helm/jdownloader2/commit/412810b8d2437c2c5d399e975effe525561f54c2) by Peter Motzko).
@@ -31,6 +33,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Bug Fixes
 
+- add missing serviceName postfix for "web"-service ([059236d](https://github.com/pmoscode-helm/jdownloader2/commit/059236d98bea7ac033c02b21c654a7fefd973eaa) by Peter Motzko).
 - don't fail job when checks fail and only show failed checks ([843ab21](https://github.com/pmoscode-helm/jdownloader2/commit/843ab215d2f40904e3867cbaada636c0bf056331) by Peter Motzko).
 - change version for kubesec action ([b68799b](https://github.com/pmoscode-helm/jdownloader2/commit/b68799b59c09406d86fb12095791103b4581bdc7) by Peter Motzko).
 - use correct template ([a81ee37](https://github.com/pmoscode-helm/jdownloader2/commit/a81ee378527dc5ef31d373bc9f8bbdfef4027704) by Peter Motzko).
