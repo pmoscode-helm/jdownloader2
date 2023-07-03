@@ -1,0 +1,68 @@
+suite: test deployment with dnsPolicy
+chart:
+  version: 9.9.9+test
+  appVersion: 9.9.9
+tests:
+  - it: dnsPolicy key should be omitted if not set
+    template: templates/deployment.yaml
+    asserts:
+      - notExists:
+          path: spec.template.spec.dnsPolicy
+  - it: dnsPolicy key should be set to Default if set to Default
+    template: templates/deployment.yaml
+    set:
+      dnsPolicy: "Default"
+    asserts:
+      - exists:
+          path: spec.template.spec.dnsPolicy
+  - it: dnsPolicy key should be set to ClusterFirst if set to ClusterFirst
+    template: templates/deployment.yaml
+    set:
+      dnsPolicy: "ClusterFirst"
+    asserts:
+      - exists:
+          path: spec.template.spec.dnsPolicy
+  - it: dnsPolicy key should be set to ClusterFirstWithHostNet if set to ClusterFirstWithHostNet
+    template: templates/deployment.yaml
+    set:
+      dnsPolicy: "ClusterFirstWithHostNet"
+    asserts:
+      - exists:
+          path: spec.template.spec.dnsPolicy
+  - it: should fail if dnsPolicy key is set to None but dnsConfig is not set
+    template: templates/deployment.yaml
+    set:
+      dnsPolicy: "None"
+    asserts:
+      - failedTemplate:
+          errorMessage: ".Values.dnsConfig.nameservers is required when .Values.dnsPolicy is set to None"
+  - it: should render dnsConfig if dnsPolicy key is set to None and dnsConfig is set
+    template: templates/deployment.yaml
+    set:
+      dnsConfig.nameservers[0]: "1.1.1.1"
+      dnsConfig.searches[0]: "test" 
+    asserts:
+      - equal:
+          path: spec.template.spec.dnsConfig.nameservers[0]
+          value: "1.1.1.1"
+      - equal:
+          path: spec.template.spec.dnsConfig.searches[0]
+          value: "test"
+  - it: should render nameservers is dnsConfig is set
+    template: templates/deployment.yaml
+    set:
+      dnsConfig: ""
+      dnsConfig.nameservers[0]: "1.1.1.1"
+    asserts:
+      - equal:
+          path: spec.template.spec.dnsConfig.nameservers[0]
+          value: "1.1.1.1"
+  - it: should render searches is dnsConfig is set
+    template: templates/deployment.yaml
+    set:
+      dnsConfig: ""
+      dnsConfig.searches[0]: "test"
+    asserts:
+      - equal:
+          path: spec.template.spec.dnsConfig.searches[0]
+          value: "test"
