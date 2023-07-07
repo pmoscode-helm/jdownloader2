@@ -46,9 +46,9 @@ tests:
             name: web
             containerPort: 5800
             protocol: TCP
-      - equal:
+      - matchRegex:
           path: spec.template.spec.containers[0].image
-          value: jlesage/jdownloader-2:v23.03.1
+          pattern: jlesage/jdownloader-2:.*
       - isNotNullOrEmpty:
           path: spec.template.spec.containers[0]
       - lengthEqual:

@@ -33,6 +33,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Bug Fixes
 
+- Correct capitalization of Taskfile in README.md ([66c4302](https://github.com/pmoscode-helm/jdownloader2/commit/66c4302650f0721a862a433aa094295e0d93366f) by Peter Motzko).
 - add missing serviceName postfix for "web"-service ([059236d](https://github.com/pmoscode-helm/jdownloader2/commit/059236d98bea7ac033c02b21c654a7fefd973eaa) by Peter Motzko).
 - don't fail job when checks fail and only show failed checks ([843ab21](https://github.com/pmoscode-helm/jdownloader2/commit/843ab215d2f40904e3867cbaada636c0bf056331) by Peter Motzko).
 - change version for kubesec action ([b68799b](https://github.com/pmoscode-helm/jdownloader2/commit/b68799b59c09406d86fb12095791103b4581bdc7) by Peter Motzko).
@@ -42,6 +43,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - try fix error in Kubesec scan ([044f1c7](https://github.com/pmoscode-helm/jdownloader2/commit/044f1c716434eb697d89ddab4ded7df1e5ddde9b) by Peter Motzko).
 - missing slash in CONTRIBUTING.md ([d501be9](https://github.com/pmoscode-helm/jdownloader2/commit/d501be9a405cb17fdf34d6d8b4273aec373b25b4) by Peter Motzko).
 - wrong config ([3c0906e](https://github.com/pmoscode-helm/jdownloader2/commit/3c0906e59e08abbe4a8b3a32cb5a32439b8e3f2d) by Peter Motzko).
+
+### Code Refactoring
+
+- uninstall pre-commit before creating index ([40e07ee](https://github.com/pmoscode-helm/jdownloader2/commit/40e07ee922f0af42a1b921ca7ba207e9fb666de0) by Peter Motzko).
 
 <!-- insertion marker -->
 ## [jdownloader2-0.3.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.3.0) - 2023-04-24
