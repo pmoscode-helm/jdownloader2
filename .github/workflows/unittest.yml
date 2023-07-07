@@ -24,7 +24,7 @@ jobs:
         run: helm unittest -t JUnit -o test_result.xml .
 
       - name: Publish Test Results
-        uses: EnricoMi/publish-unit-test-result-action@v2.7.0
+        uses: EnricoMi/publish-unit-test-result-action@v2.8.0
         if: always()
         with:
           files: |
