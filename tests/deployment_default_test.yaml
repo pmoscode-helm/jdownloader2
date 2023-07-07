@@ -48,7 +48,7 @@ tests:
             protocol: TCP
       - equal:
           path: spec.template.spec.containers[0].image
-          value: jlesage/jdownloader-2:v23.03.1
+          value: jlesage/jdownloader-2:v23.06.1
       - isNotNullOrEmpty:
           path: spec.template.spec.containers[0]
       - lengthEqual:
