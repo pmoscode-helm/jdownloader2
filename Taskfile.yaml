@@ -28,8 +28,10 @@ tasks:
   index:
     desc: Creates or updates the index file and pushes it to the default github pages branch
     cmds:
+      - pre-commit uninstall
       - cr index -o $GITHUB_USERNAME -r $CHART_NAME -t $GITHUB_TOKEN -i . --push
       - rm index.yaml
+      - pre-commit install
 
   publish:
     desc: Execute all steps for a Helm Chart deployment on GitHub-Pages (Don't forget to bump proper version)
