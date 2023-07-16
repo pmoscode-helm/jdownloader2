@@ -28,3 +28,5 @@ assets
 tests
 scripts
 .pre-commit-config.yaml
+renovate.json
+Taskfile.yaml
