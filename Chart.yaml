@@ -14,7 +14,7 @@ annotations:
     - name: pmoscode
       email: info@pmoscode.de
 apiVersion: v2
-appVersion: v23.03.1
+appVersion: v23.06.1
 description: jDownloader2 Helm chart for Kubernetes. "JDownloader is a free, open-source
   download management tool with a huge community that makes downloading as easy and
   fast as it should be. Users can start, stop or pause downloads, set bandwith limitations,
@@ -30,4 +30,4 @@ name: jdownloader2
 sources:
 - https://jdownloader.org/
 type: application
-version: 0.3.0
+version: 0.3.1

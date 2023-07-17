@@ -2,7 +2,7 @@ image:
   # -- repository with jdownloader2 image
   repository: jlesage/jdownloader-2
   # -- current version of the image
-  tag: v23.06.1
+  tag:
   # -- pull policy
   pullPolicy: Always
 
