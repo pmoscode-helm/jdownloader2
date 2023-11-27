@@ -30,3 +30,6 @@ scripts
 .pre-commit-config.yaml
 renovate.json
 Taskfile.yaml
+.env-template
+.env
+.github
