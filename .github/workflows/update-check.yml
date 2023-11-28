@@ -19,7 +19,7 @@ jobs:
           fromGitHubReleases: "true"
           repo: "pmoscode/helm-chart-update-check"
           urlTemplate: "https://github.com/pmoscode/helm-chart-update-check/releases/download/{{version}}/hcuc-{{version}}-linux-amd64.tar.gz"
-          version: "v0.1.0"
+          version: "v0.1.1"
           pathInArchive: "hcuc"
           token: ${{ secrets.GITHUB_TOKEN }}
 
