@@ -1,0 +1,21 @@
+{
+  "Messages":[
+    {
+      "From": {
+        "Email": "$MAILJET_FROM_MAIL"
+      },
+      "To": [
+        {
+          "Email": "$MAILJET_TO_MAIL"
+        }
+      ],
+      "TemplateID": 5363003,
+      "TemplateLanguage": true,
+      "Subject": "$MAILJET_SUBJECT",
+      "Variables": {
+        "project_name": "$GITHUB_REPOSITORY",
+        "project_url": "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+      }
+    }
+  ]
+}

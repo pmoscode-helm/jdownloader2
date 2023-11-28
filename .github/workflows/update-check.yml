@@ -1,0 +1,39 @@
+name: Helm chart image tag check
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */12 * * *"
+
+jobs:
+  check:
+    name: Check
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download "helm-chart-update-check"
+        uses: engineerd/configurator@v0.0.10
+        with:
+          name: "hcuc"
+          fromGitHubReleases: "true"
+          repo: "pmoscode/helm-chart-update-check"
+          urlTemplate: "https://github.com/pmoscode/helm-chart-update-check/releases/download/{{version}}/hcuc-{{version}}-linux-amd64.tar.gz"
+          version: "v0.1.0"
+          pathInArchive: "hcuc"
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check for updates
+        run: |
+          hcuc --docker-hub-repo jlesage/jdownloader-2 --fail-on-update --debug
+
+      - name: Send notification
+        if: failure()
+        env:
+          MAILJET_KEY: ${{ secrets.MAILJET_KEY }}
+          MAILJET_SECRET: ${{ secrets.MAILJET_SECRET }}
+          MAILJET_FROM_MAIL: ${{ vars.MAILJET_FROM_MAIL }}
+          MAILJET_TO_MAIL: ${{ vars.MAILJET_TO_MAIL }}
+          MAILJET_SUBJECT: ${{ vars.MAILJET_SUBJECT }}
+        run: |
+          ./pipeline/send_mail.sh
