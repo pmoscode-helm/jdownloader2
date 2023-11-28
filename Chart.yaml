@@ -1,7 +1,32 @@
+apiVersion: v2
+
+name: jdownloader2
+type: application
+
+description: jDownloader2 Helm chart for Kubernetes. "JDownloader is a free, open-source
+  download management tool with a huge community that makes downloading as easy and
+  fast as it should be. Users can start, stop or pause downloads, set bandwith limitations,
+  auto-extract archives and much more. It's an easy-to-extend framework that can save
+  hours of your valuable time every day!"
+
+version: 0.4.0
+appVersion: v23.11.2
+
+home: https://jdownloader.org/
+icon: https://github.com/pmoscode/jdownloader2/raw/main/assets/logo.png
+
+maintainers:
+- email: info@pmoscode.de
+  name: pmoscode
+  url: https://pmoscode.de
+
+sources:
+- https://jdownloader.org/
+
 annotations:
   artifacthub.io/images: |
     - name: jdownloader2
-      image: jlesage/jdownloader-2:v23.06.1
+      image: jlesage/jdownloader-2:v23.11.2
       platforms:
         - linux/amd64
   artifacthub.io/license: MIT
@@ -13,21 +38,3 @@ annotations:
   artifacthub.io/maintainers: |
     - name: pmoscode
       email: info@pmoscode.de
-apiVersion: v2
-appVersion: v23.06.1
-description: jDownloader2 Helm chart for Kubernetes. "JDownloader is a free, open-source
-  download management tool with a huge community that makes downloading as easy and
-  fast as it should be. Users can start, stop or pause downloads, set bandwith limitations,
-  auto-extract archives and much more. It's an easy-to-extend framework that can save
-  hours of your valuable time every day!"
-home: https://jdownloader.org/
-icon: https://github.com/pmoscode/jdownloader2/raw/main/assets/logo.png
-maintainers:
-- email: info@pmoscode.de
-  name: pmoscode
-  url: https://pmoscode.de
-name: jdownloader2
-sources:
-- https://jdownloader.org/
-type: application
-version: 0.3.1
