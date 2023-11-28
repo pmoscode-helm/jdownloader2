@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Features
 
+- add Helm chart image update check ([0949b84](https://github.com/pmoscode-helm/jdownloader2/commit/0949b84aff5a3c30823bbf4598c761cf9582344c) by Peter Motzko).
+- add renovate.json to .helmignore ([6f57ff6](https://github.com/pmoscode-helm/jdownloader2/commit/6f57ff61bdb549b366914ee5a8d595f9c2545c57) by Peter Motzko).
+- add Trivy scan action ([30c26f5](https://github.com/pmoscode-helm/jdownloader2/commit/30c26f54fb77920de97a78e5a14c4e59a1ccf5a6) by Peter Motzko).
 - remove api key for "bridgecrew.cloud" ([8f5b6c6](https://github.com/pmoscode-helm/jdownloader2/commit/8f5b6c6b844eb6904e3d2a41fe12010ad5c35483) by Peter Motzko).
 - add ".env" description to readme file ([a72a1ad](https://github.com/pmoscode-helm/jdownloader2/commit/a72a1ad8c9b8f667d35aed2d7b848373e61b6fe8) by Peter Motzko).
 - add scanning for secrets ([b7302e6](https://github.com/pmoscode-helm/jdownloader2/commit/b7302e6ec9e7ad4c18ed7895e4d2c70692fd6735) by Peter Motzko).
@@ -33,6 +36,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Bug Fixes
 
+- update hcuc to 0.1.1 due to a version parse error ([a5e434e](https://github.com/pmoscode-helm/jdownloader2/commit/a5e434ec52b8a662a35ab68bb2c817227ec8d8ec) by Peter Motzko).
+- add more files to .helmignore ([6ed6b78](https://github.com/pmoscode-helm/jdownloader2/commit/6ed6b7889d17be2e09a85c7a06d772388f6bb7d3) by Peter Motzko).
 - Correct capitalization of Taskfile in README.md ([66c4302](https://github.com/pmoscode-helm/jdownloader2/commit/66c4302650f0721a862a433aa094295e0d93366f) by Peter Motzko).
 - add missing serviceName postfix for "web"-service ([059236d](https://github.com/pmoscode-helm/jdownloader2/commit/059236d98bea7ac033c02b21c654a7fefd973eaa) by Peter Motzko).
 - don't fail job when checks fail and only show failed checks ([843ab21](https://github.com/pmoscode-helm/jdownloader2/commit/843ab215d2f40904e3867cbaada636c0bf056331) by Peter Motzko).

@@ -1,5 +1,5 @@
 # jdownloader2 Helm Chart
-![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat-square)
+![Version: 0.4.0](https://img.shields.io/badge/Version-0.4.0-informational?style=flat-square)
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/jdownloader2)](https://artifacthub.io/packages/search?repo=jdownloader2)
 
 From https://jdownloader.org/:
@@ -40,7 +40,7 @@ See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command document
 |-----|------|---------|-------------|
 | image.pullPolicy | string | `"Always"` | pull policy |
 | image.repository | string | `"jlesage/jdownloader-2"` | repository with jdownloader2 image |
-| image.tag | string | `"v23.03.1"` | current version of the image |
+| image.tag | string | `nil` | current version of the image |
 | imagePullSecrets | list | `[]` | imagePullSecrets (not needed, if default image is used) |
 | ingress | object | `{"annotations":{},"className":"","enabled":false,"hosts":[{"host":"chart-example.local","paths":[{"path":"/","pathType":"ImplementationSpecific"}]}],"tls":[]}` | Configure ingress for the "web" service. Only considered, if "service.web" is enabled |
 | myjd.email | string | `""` | if "service.myjd" is enabled, the email address of the myJdownloader account is required |
