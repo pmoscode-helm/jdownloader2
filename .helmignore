@@ -33,3 +33,4 @@ Taskfile.yaml
 .env-template
 .env
 .github
+.helmignore
