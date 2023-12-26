@@ -8,7 +8,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## Unreleased
 
-<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.3.0...HEAD)</small>
+<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.4.0...HEAD)</small>
+
+### Bug Fixes
+
+- add more files to .helmignore ([c45c70f](https://github.com/pmoscode-helm/jdownloader2/commit/c45c70feac262b0440a39d71940e7194eab7a559) by Peter Motzko).
+
+<!-- insertion marker -->
+## [jdownloader2-0.4.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.4.0) - 2023-11-28
+
+<small>[Compare with jdownloader2-0.3.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.3.0...jdownloader2-0.4.0)</small>
 
 ### Features
 
@@ -53,7 +62,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - uninstall pre-commit before creating index ([40e07ee](https://github.com/pmoscode-helm/jdownloader2/commit/40e07ee922f0af42a1b921ca7ba207e9fb666de0) by Peter Motzko).
 
-<!-- insertion marker -->
 ## [jdownloader2-0.3.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.3.0) - 2023-04-24
 
 <small>[Compare with jdownloader2-0.2.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.2.0...jdownloader2-0.3.0)</small>
@@ -89,20 +97,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - Update Chart and Readme ([13eca30](https://github.com/pmoscode-helm/jdownloader2/commit/13eca309502ec4ad04167788b20a64673199ba82) by Peter Motzko).
 - Update repositoryID ([45b1253](https://github.com/pmoscode-helm/jdownloader2/commit/45b1253cb6914d7a444c3b99f9cec5d2497b44e2) by Peter Motzko).
-- Delete stuff from GitLab ([ee3dcc7](https://github.com/pmoscode-helm/jdownloader2/commit/ee3dcc766523d527eaeb81792aedd80a6f53fdc9) by Peter Motzko).
-- Adjust chart icon ([410ac00](https://github.com/pmoscode-helm/jdownloader2/commit/410ac00e32fec031af0140b7b7b451d5cdc03e61) by Peter Motzko).
-- Adjust ArtifactID ([a2527e4](https://github.com/pmoscode-helm/jdownloader2/commit/a2527e42d4c565d5e3bb9259ca612747357cbb24) by Peter Motzko).
 
-### Bug Fixes
-
-- Change helm repo url after migration to GitHub ([6575ec8](https://github.com/pmoscode-helm/jdownloader2/commit/6575ec890eb217692b6ccef258061f6f15f50efb) by Peter Motzko).
-
-## [jdownloader2-0.1.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.1.0) - 2023-04-16
+## [jdownloader2-0.1.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.1.0) - 2023-04-18
 
 <small>[Compare with first commit](https://github.com/pmoscode-helm/jdownloader2/compare/a380671a24b0691631682b0fc9eb63c8036d02fd...jdownloader2-0.1.0)</small>
 
 ### Features
 
+- Delete stuff from GitLab ([ee3dcc7](https://github.com/pmoscode-helm/jdownloader2/commit/ee3dcc766523d527eaeb81792aedd80a6f53fdc9) by Peter Motzko).
+- Adjust chart icon ([410ac00](https://github.com/pmoscode-helm/jdownloader2/commit/410ac00e32fec031af0140b7b7b451d5cdc03e61) by Peter Motzko).
+- Adjust ArtifactID ([a2527e4](https://github.com/pmoscode-helm/jdownloader2/commit/a2527e42d4c565d5e3bb9259ca612747357cbb24) by Peter Motzko).
 - Add unneeded stuff to .helmignore ([709108c](https://github.com/pmoscode-helm/jdownloader2/commit/709108c62c20ead4d70edf8bc1e75458ca646658) by Peter Motzko).
 - Add Artifacthub badge ([3f2826d](https://github.com/pmoscode-helm/jdownloader2/commit/3f2826d3807c6536131031e1d8de4c48b14878dd) by Peter Motzko).
 - Update helm-doc README template and render it ([abf7400](https://github.com/pmoscode-helm/jdownloader2/commit/abf74003c2b7593eeda686588be6e79e1c3f6834) by Peter Motzko).
@@ -120,6 +124,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Bug Fixes
 
+- Change helm repo url after migration to GitHub ([6575ec8](https://github.com/pmoscode-helm/jdownloader2/commit/6575ec890eb217692b6ccef258061f6f15f50efb) by Peter Motzko).
 - Add empty string ([bd38e93](https://github.com/pmoscode-helm/jdownloader2/commit/bd38e93b91e9cc74caf2824826c4c7538d42d39c) by Peter Motzko).
 - Remove duplicate JDownloader link ([efd7dd6](https://github.com/pmoscode-helm/jdownloader2/commit/efd7dd638d9e69f33f4ae34e57df060fd39b88e3) by Peter Motzko).
 - Icon URL ([4500ce0](https://github.com/pmoscode-helm/jdownloader2/commit/4500ce05e5a5313abfec1187af4fd92bb96326ce) by Peter Motzko).
