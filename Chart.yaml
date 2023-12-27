@@ -9,8 +9,8 @@ description: jDownloader2 Helm chart for Kubernetes. "JDownloader is a free, ope
   auto-extract archives and much more. It's an easy-to-extend framework that can save
   hours of your valuable time every day!"
 
-version: 0.5.0
-appVersion: v23.12.1
+version: 0.5.1
+appVersion: v23.12.2
 
 home: https://jdownloader.org/
 icon: https://github.com/pmoscode/jdownloader2/raw/main/assets/logo.png
@@ -26,7 +26,7 @@ sources:
 annotations:
   artifacthub.io/images: |
     - name: jdownloader2
-      image: jlesage/jdownloader-2:v23.12.1
+      image: jlesage/jdownloader-2:v23.12.2
       platforms:
         - linux/amd64
   artifacthub.io/license: MIT
