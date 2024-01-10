@@ -11,7 +11,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: alpine/helm:3.13.2
+    container: alpine/helm:3.13.3
     permissions:
       checks: write
       pull-requests: write
