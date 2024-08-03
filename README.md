@@ -1,5 +1,5 @@
 # jdownloader2 Helm Chart
-![Version: 0.7.0](https://img.shields.io/badge/Version-0.7.0-informational?style=flat-square)
+![Version: 0.8.0](https://img.shields.io/badge/Version-0.8.0-informational?style=flat-square)
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/jdownloader2)](https://artifacthub.io/packages/search?repo=jdownloader2)
 
 From https://jdownloader.org/:
