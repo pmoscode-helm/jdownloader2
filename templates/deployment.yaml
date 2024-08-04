@@ -53,6 +53,9 @@ spec:
             - name: {{ include "jdownloader2-headless.fullname" . }}-data
               subPath: downloads
               mountPath: /output
+            {{- if .Values.additionalVolumeMounts }}
+{{ toYaml .Values.additionalVolumeMounts | indent 12}}
+            {{- end }}
           ports:
             {{- if .Values.service.myjd.enabled }}
             - name: myjd
@@ -100,3 +103,7 @@ spec:
           {{- else }}
           emptyDir: { }
           {{- end }}
+
+        {{- if .Values.additionalVolumes }}
+{{ toYaml .Values.additionalVolumes | indent 8  }}
+        {{- end }}
