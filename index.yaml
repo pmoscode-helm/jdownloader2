@@ -4,6 +4,43 @@ entries:
   - annotations:
       artifacthub.io/images: |
         - name: jdownloader2
+          image: jlesage/jdownloader-2:v24.09.1
+          platforms:
+            - linux/amd64
+      artifacthub.io/license: MIT
+      artifacthub.io/links: |
+        - name: Source
+          url: https://github.com/pmoscode-helm/jdownloader2
+        - name: support
+          url: https://github.com/pmoscode-helm/jdownloader2/issues
+      artifacthub.io/maintainers: |
+        - name: pmoscode
+          email: info@pmoscode.de
+    apiVersion: v2
+    appVersion: v24.09.1
+    created: "2024-09-30T09:14:25.176614+02:00"
+    description: jDownloader2 Helm chart for Kubernetes. "JDownloader is a free, open-source
+      download management tool with a huge community that makes downloading as easy
+      and fast as it should be. Users can start, stop or pause downloads, set bandwith
+      limitations, auto-extract archives and much more. It's an easy-to-extend framework
+      that can save hours of your valuable time every day!"
+    digest: 1abcccdb6d9cde5c715499d8e3d6f878603daf72430ceccb4c27dcebc2f58c36
+    home: https://jdownloader.org/
+    icon: https://github.com/pmoscode/jdownloader2/raw/main/assets/logo.png
+    maintainers:
+    - email: info@pmoscode.de
+      name: pmoscode
+      url: https://pmoscode.de
+    name: jdownloader2
+    sources:
+    - https://jdownloader.org/
+    type: application
+    urls:
+    - https://github.com/pmoscode-helm/jdownloader2/releases/download/jdownloader2-0.9.0/jdownloader2-0.9.0.tgz
+    version: 0.9.0
+  - annotations:
+      artifacthub.io/images: |
+        - name: jdownloader2
           image: jlesage/jdownloader-2:v24.08.1
           platforms:
             - linux/amd64
@@ -371,4 +408,4 @@ entries:
     urls:
     - https://github.com/pmoscode/jdownloader2/releases/download/jdownloader2-0.1.0/jdownloader2-0.1.0.tgz
     version: 0.1.0
-generated: "2024-08-03T20:00:47.359972+02:00"
+generated: "2024-09-30T09:14:25.176656+02:00"
