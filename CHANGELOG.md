@@ -8,13 +8,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## Unreleased
 
-<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.7.0...HEAD)</small>
+<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.8.0...HEAD)</small>
 
 ### Features
 
-- bump docker image to v24.08.1 ([aa18182](https://github.com/pmoscode-helm/jdownloader2/commit/aa181822ce2e626c44a24ab1737ddfba642144f2) by Peter Motzko).
+- bump docker image to v24.09.1 ([71b7c51](https://github.com/pmoscode-helm/jdownloader2/commit/71b7c515bdf57163f7bd37f75d17f2a5744d993d) by Peter Motzko).
 
 <!-- insertion marker -->
+## [jdownloader2-0.8.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.8.0) - 2024-08-03
+
+<small>[Compare with jdownloader2-0.7.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.7.0...jdownloader2-0.8.0)</small>
+
 ## [jdownloader2-0.7.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.7.0) - 2024-07-04
 
 <small>[Compare with jdownloader2-0.6.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.6.0...jdownloader2-0.7.0)</small>
