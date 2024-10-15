@@ -1,0 +1,43 @@
+suite: test deployment with own secret for myjd service enabled
+chart:
+  version: 9.9.9+test
+  appVersion: 9.9.9
+tests:
+  - it: should use configured secret
+    template: templates/deployment.yaml
+    set:
+      service.myjd.enabled: true
+      myjd.existingSecretName: "test-secret"
+    asserts:
+      - exists:
+          path: spec.template.spec.containers
+      - exists:
+          path: spec.template.spec.containers[0].env
+      - lengthEqual:
+          path: spec.template.spec.containers[0].env
+          count: 3
+      - equal:
+          path: spec.template.spec.containers[0].env[0].valueFrom.secretKeyRef.name
+          value: test-secret
+      - equal:
+          path: spec.template.spec.containers[0].env[1].valueFrom.secretKeyRef.name
+          value: test-secret
+
+  - it: should use default secret, if no custom one is defined
+    template: templates/deployment.yaml
+    set:
+      service.myjd.enabled: true
+    asserts:
+      - exists:
+          path: spec.template.spec.containers
+      - exists:
+          path: spec.template.spec.containers[0].env
+      - lengthEqual:
+          path: spec.template.spec.containers[0].env
+          count: 3
+      - equal:
+          path: spec.template.spec.containers[0].env[0].valueFrom.secretKeyRef.name
+          value: RELEASE-NAME-jdownloader2-secret
+      - equal:
+          path: spec.template.spec.containers[0].env[1].valueFrom.secretKeyRef.name
+          value: RELEASE-NAME-jdownloader2-secret

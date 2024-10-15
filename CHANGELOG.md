@@ -12,7 +12,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Features
 
-- bump docker image to v24.09.1 ([71b7c51](https://github.com/pmoscode-helm/jdownloader2/commit/71b7c515bdf57163f7bd37f75d17f2a5744d993d) by Peter Motzko).
+- add ability to use an existing secret for the myjd service ([0d91162](https://github.com/pmoscode-helm/jdownloader2/commit/0d91162cfbdae4b15a808e0e11429ec5900ad0fc) by Peter Motzko).
+- bump docker image to v24.09.1 ([8e47094](https://github.com/pmoscode-helm/jdownloader2/commit/8e470942bfdd9fee5f37a51266349c20db71a501) by Peter Motzko).
 
 <!-- insertion marker -->
 ## [jdownloader2-0.8.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.8.0) - 2024-08-03
