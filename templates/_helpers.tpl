@@ -60,3 +60,11 @@ Create the name of the service account to use
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
 {{- end }}
+
+{{- define "jdownloader2-headless.secretName" -}}
+{{- if eq .Values.myjd.existingSecretName "" }}
+{{- include "jdownloader2-headless.fullname" . }}-secret
+{{- else }}
+{{- .Values.myjd.existingSecretName }}
+{{- end }}
+{{- end }}

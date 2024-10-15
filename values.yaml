@@ -11,6 +11,8 @@ myjd:
   email: ""
   # -- (string) if "service.myjd" is enabled, the password of the myJdownloader account is required
   password: ""
+  # -- use existing myjd secret (its data has to contains the keys: "email" and "password")
+  existingSecretName: ""
 
 persistence:
   # -- enable persistence when true

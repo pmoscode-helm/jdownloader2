@@ -37,12 +37,12 @@ spec:
               valueFrom:
                 secretKeyRef:
                   key: email
-                  name: {{ include "jdownloader2-headless.fullname" . }}-secret
+                  name: {{ include "jdownloader2-headless.secretName" . }}
             - name: MYJDOWNLOADER_PASSWORD
               valueFrom:
                 secretKeyRef:
                   key: password
-                  name: {{ include "jdownloader2-headless.fullname" . }}-secret
+                  name: {{ include "jdownloader2-headless.secretName" . }}
             - name: MYJDOWNLOADER_DEVICE_NAME
               value: {{ include "jdownloader2-headless.fullname" . }}-id
           {{- end }}
