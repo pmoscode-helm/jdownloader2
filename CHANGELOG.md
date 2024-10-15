@@ -6,16 +6,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
-## Unreleased
+## [jdownloader2-0.10.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.10.0) - 2024-10-15
 
-<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.8.0...HEAD)</small>
+<small>[Compare with jdownloader2-0.8.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.8.0...jdownloader2-0.10.0)</small>
 
 ### Features
 
-- add ability to use an existing secret for the myjd service ([0d91162](https://github.com/pmoscode-helm/jdownloader2/commit/0d91162cfbdae4b15a808e0e11429ec5900ad0fc) by Peter Motzko).
+- add ability to use an existing secret for the myjd service ([42a0fcb](https://github.com/pmoscode-helm/jdownloader2/commit/42a0fcb7bad4aa02718b672bda4bfbd7f9e9a8e7) by Peter Motzko).
 - bump docker image to v24.09.1 ([8e47094](https://github.com/pmoscode-helm/jdownloader2/commit/8e470942bfdd9fee5f37a51266349c20db71a501) by Peter Motzko).
 
-<!-- insertion marker -->
 ## [jdownloader2-0.8.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.8.0) - 2024-08-03
 
 <small>[Compare with jdownloader2-0.7.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.7.0...jdownloader2-0.8.0)</small>
