@@ -25,6 +25,9 @@ tests:
   - it: should render volumes and volumeMounts correctly
     template: templates/deployment.yaml
     asserts:
+      - lengthEqual:
+          path: spec.template.spec.volumes
+          count: 1
       - exists:
           path: spec.template.spec.volumes[0].emptyDir
       - lengthEqual:

@@ -1,5 +1,5 @@
 # jdownloader2 Helm Chart
-![Version: 0.10.0](https://img.shields.io/badge/Version-0.10.0-informational?style=flat-square)
+![Version: 0.11.0](https://img.shields.io/badge/Version-0.11.0-informational?style=flat-square)
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/jdownloader2)](https://artifacthub.io/packages/search?repo=jdownloader2)
 
 From https://jdownloader.org/:
@@ -38,6 +38,8 @@ See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command document
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| additionalVolumeMounts | list | `[]` | mountpoint(s) of the additional volumes inside the container |
+| additionalVolumes | list | `[]` | additional volume(s) to mount into the container |
 | image.pullPolicy | string | `"Always"` | pull policy |
 | image.repository | string | `"jlesage/jdownloader-2"` | repository with jdownloader2 image |
 | image.tag | string | `nil` | current version of the image |

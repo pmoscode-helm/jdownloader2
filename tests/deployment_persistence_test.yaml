@@ -36,3 +36,48 @@ tests:
       - lengthEqual:
           path: spec.template.spec.containers[0].volumeMounts
           count: 2
+
+  - it: should render correct content when using additional volumes and volumeMounts
+    template: templates/deployment.yaml
+    set:
+      persistence.enabled: true
+      additionalVolumes:
+        - name: test
+          nfs:
+            path: /nfs-path
+            server: my-nfs-server
+        - name: cfmp
+          configMap:
+            name: test-map
+            items:
+              - key: config.yaml
+                path: /config
+      additionalVolumeMounts:
+        - name: test
+          mountPath: /mnt
+          subPath: data
+        - name: cfmp
+          mountPath: /server.yaml
+          subPath: server
+    documentIndex: 0
+    asserts:
+      - hasDocuments:
+          count: 1
+      - lengthEqual:
+          path: spec.template.spec.volumes
+          count: 3
+      - lengthEqual:
+          path: spec.template.spec.containers[0].volumeMounts
+          count: 4
+      - equal:
+          path: spec.template.spec.volumes[1].name
+          value: test
+      - equal:
+          path: spec.template.spec.volumes[2].name
+          value: cfmp
+      - equal:
+          path: spec.template.spec.containers[0].volumeMounts[2].name
+          value: test
+      - equal:
+          path: spec.template.spec.containers[0].volumeMounts[3].name
+          value: cfmp
