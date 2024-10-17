@@ -6,15 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
-## Unreleased
+## [jdownloader2-0.11.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.11.0) - 2024-10-17
 
-<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.10.0...HEAD)</small>
+<small>[Compare with jdownloader2-0.10.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.10.0...jdownloader2-0.11.0)</small>
 
 ### Features
 
-- add config for additional volumes and volume-mounts ([dbf0a9e](https://github.com/pmoscode-helm/jdownloader2/commit/dbf0a9e744ba85582b01b11841945f39371562f4) by Peter Motzko).
+- add config for additional volumes and volume-mounts ([b243bd2](https://github.com/pmoscode-helm/jdownloader2/commit/b243bd2404857ae8c03158f31aa003e73b062d5c) by Peter Motzko).
 
-<!-- insertion marker -->
 ## [jdownloader2-0.10.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.10.0) - 2024-10-15
 
 <small>[Compare with jdownloader2-0.8.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.8.0...jdownloader2-0.10.0)</small>
