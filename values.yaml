@@ -119,3 +119,9 @@ tolerations: []
 
 # -- @ignore
 affinity: {}
+
+# -- additional volume(s) to mount into the container
+additionalVolumes: []
+
+# -- mountpoint(s) of the additional volumes inside the container
+additionalVolumeMounts: []
