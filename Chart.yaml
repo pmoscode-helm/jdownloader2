@@ -13,7 +13,7 @@ version: 0.11.0
 appVersion: v24.09.1
 
 home: https://jdownloader.org/
-icon: https://github.com/pmoscode/jdownloader2/raw/main/assets/logo.png
+icon: https://github.com/pmoscode-helm/jdownloader2/raw/main/assets/logo.png
 
 maintainers:
 - email: info@pmoscode.de
