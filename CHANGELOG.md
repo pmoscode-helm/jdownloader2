@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## Unreleased
+
+<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.11.0...HEAD)</small>
+
+### Features
+
+- bump docker image to v24.11.1 ([999e609](https://github.com/pmoscode-helm/jdownloader2/commit/999e609eface0a36024d78e35bad39ca0edc946f) by Peter Motzko).
+
+### Bug Fixes
+
+- icon location ([d2ac06c](https://github.com/pmoscode-helm/jdownloader2/commit/d2ac06c01c74f64acc8cce3e9f8ecc073b0c66cb) by Peter Motzko).
+
+<!-- insertion marker -->
 ## [jdownloader2-0.11.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.11.0) - 2024-10-17
 
 <small>[Compare with jdownloader2-0.10.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.10.0...jdownloader2-0.11.0)</small>
