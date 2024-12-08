@@ -3,30 +3,31 @@ apiVersion: v2
 name: jdownloader2
 type: application
 
-description: jDownloader2 Helm chart for Kubernetes. "JDownloader is a free, open-source
+description:
+  jDownloader2 Helm chart for Kubernetes. "JDownloader is a free, open-source
   download management tool with a huge community that makes downloading as easy and
   fast as it should be. Users can start, stop or pause downloads, set bandwith limitations,
   auto-extract archives and much more. It's an easy-to-extend framework that can save
   hours of your valuable time every day!"
 
-version: 0.12.0
-appVersion: v24.11.1
+version: 0.13.0
+appVersion: v24.12.1
 
 home: https://jdownloader.org/
 icon: https://github.com/pmoscode-helm/jdownloader2/raw/main/assets/logo.png
 
 maintainers:
-- email: info@pmoscode.de
-  name: pmoscode
-  url: https://pmoscode.de
+  - email: info@pmoscode.de
+    name: pmoscode
+    url: https://pmoscode.de
 
 sources:
-- https://jdownloader.org/
+  - https://jdownloader.org/
 
 annotations:
   artifacthub.io/images: |
     - name: jdownloader2
-      image: jlesage/jdownloader-2:v24.11.1
+      image: jlesage/jdownloader-2:v24.12.1
       platforms:
         - linux/amd64
   artifacthub.io/license: MIT
