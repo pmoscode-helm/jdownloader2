@@ -12,7 +12,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Features
 
-- bump docker image to v24.11.1 ([5b79874](https://github.com/pmoscode-helm/jdownloader2/commit/5b798746982bfa047d495e69cbc9be378bb350f5) by Peter Motzko).
+- update to v24.12.1 ([c7b9681](https://github.com/pmoscode-helm/jdownloader2/commit/c7b9681697894c9f3b8362a72027fc3abed1e2be) by Peter Motzko).
+- bump docker image to v24.11.1 ([1a5bf63](https://github.com/pmoscode-helm/jdownloader2/commit/1a5bf636ec301bbab2c64f97dc96987731181eac) by Peter Motzko).
 
 ### Bug Fixes
 
