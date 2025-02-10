@@ -10,8 +10,8 @@ description:
   auto-extract archives and much more. It's an easy-to-extend framework that can save
   hours of your valuable time every day!"
 
-version: 0.13.0
-appVersion: v24.12.1
+version: 1.2.1
+appVersion: v25.02.1
 
 home: https://jdownloader.org/
 icon: https://github.com/pmoscode-helm/jdownloader2/raw/main/assets/logo.png
@@ -27,7 +27,7 @@ sources:
 annotations:
   artifacthub.io/images: |
     - name: jdownloader2
-      image: jlesage/jdownloader-2:v24.12.1
+      image: jlesage/jdownloader-2:v25.02.1
       platforms:
         - linux/amd64
   artifacthub.io/license: MIT

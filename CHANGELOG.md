@@ -8,18 +8,34 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## Unreleased
 
-<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.11.0...HEAD)</small>
+<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.13.0...HEAD)</small>
 
 ### Features
 
-- update to v24.12.1 ([c7b9681](https://github.com/pmoscode-helm/jdownloader2/commit/c7b9681697894c9f3b8362a72027fc3abed1e2be) by Peter Motzko).
+- bump docker image to v25.02.1 ([006993e](https://github.com/pmoscode-helm/jdownloader2/commit/006993e80e7ea856791f2d73cb8a501f0d633e3a) by Peter Motzko).
+
+<!-- insertion marker -->
+## [jdownloader2-0.13.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.13.0) - 2024-12-08
+
+<small>[Compare with jdownloader2-0.12.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.12.0...jdownloader2-0.13.0)</small>
+
+### Features
+
+- update to v24.12.1 ([e8f8440](https://github.com/pmoscode-helm/jdownloader2/commit/e8f8440499c4cdfc0aaac122d4a29e03fb544c0b) by Peter Motzko).
 - bump docker image to v24.11.1 ([1a5bf63](https://github.com/pmoscode-helm/jdownloader2/commit/1a5bf636ec301bbab2c64f97dc96987731181eac) by Peter Motzko).
+
+## [jdownloader2-0.12.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.12.0) - 2024-11-23
+
+<small>[Compare with jdownloader2-0.11.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.11.0...jdownloader2-0.12.0)</small>
+
+### Features
+
+- bump docker image to v24.11.1 ([b4dd198](https://github.com/pmoscode-helm/jdownloader2/commit/b4dd198f225b2ed146afd4bedd6d04c94085e8e9) by Peter Motzko).
 
 ### Bug Fixes
 
 - icon location ([d2ac06c](https://github.com/pmoscode-helm/jdownloader2/commit/d2ac06c01c74f64acc8cce3e9f8ecc073b0c66cb) by Peter Motzko).
 
-<!-- insertion marker -->
 ## [jdownloader2-0.11.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.11.0) - 2024-10-17
 
 <small>[Compare with jdownloader2-0.10.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.10.0...jdownloader2-0.11.0)</small>
