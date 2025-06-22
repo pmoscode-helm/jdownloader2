@@ -27,7 +27,7 @@ sources:
 annotations:
   artifacthub.io/images: |
     - name: jdownloader2
-      image: jlesage/jdownloader-2:v25.02.1
+      image: jlesage/jdownloader-2:v25.06.1
       platforms:
         - linux/amd64
   artifacthub.io/license: MIT
