@@ -17,6 +17,43 @@ entries:
         - name: pmoscode
           email: info@pmoscode.de
     apiVersion: v2
+    appVersion: v25.06.1
+    created: "2025-06-22T15:03:53.267484+02:00"
+    description: jDownloader2 Helm chart for Kubernetes. "JDownloader is a free, open-source
+      download management tool with a huge community that makes downloading as easy
+      and fast as it should be. Users can start, stop or pause downloads, set bandwith
+      limitations, auto-extract archives and much more. It's an easy-to-extend framework
+      that can save hours of your valuable time every day!"
+    digest: 075d8e536145785a0acfd9cec1ce694c5770ee6b5109ab35a80cfbb4a7c5b743
+    home: https://jdownloader.org/
+    icon: https://github.com/pmoscode-helm/jdownloader2/raw/main/assets/logo.png
+    maintainers:
+    - email: info@pmoscode.de
+      name: pmoscode
+      url: https://pmoscode.de
+    name: jdownloader2
+    sources:
+    - https://jdownloader.org/
+    type: application
+    urls:
+    - https://github.com/pmoscode-helm/jdownloader2/releases/download/jdownloader2-1.3.0/jdownloader2-1.3.0.tgz
+    version: 1.3.0
+  - annotations:
+      artifacthub.io/images: |
+        - name: jdownloader2
+          image: jlesage/jdownloader-2:v25.02.1
+          platforms:
+            - linux/amd64
+      artifacthub.io/license: MIT
+      artifacthub.io/links: |
+        - name: Source
+          url: https://github.com/pmoscode-helm/jdownloader2
+        - name: support
+          url: https://github.com/pmoscode-helm/jdownloader2/issues
+      artifacthub.io/maintainers: |
+        - name: pmoscode
+          email: info@pmoscode.de
+    apiVersion: v2
     appVersion: v25.02.1
     created: "2025-02-10T09:05:11.122603+01:00"
     description: jDownloader2 Helm chart for Kubernetes. "JDownloader is a free, open-source
@@ -593,4 +630,4 @@ entries:
     urls:
     - https://github.com/pmoscode/jdownloader2/releases/download/jdownloader2-0.1.0/jdownloader2-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-10T09:05:11.122791+01:00"
+generated: "2025-06-22T15:03:53.267621+02:00"
