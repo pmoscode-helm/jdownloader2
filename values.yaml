@@ -44,6 +44,9 @@ serviceAccount:
   name: ""
 
 # -- @ignore
+strategy:
+
+# -- @ignore
 podAnnotations: {}
 
 # -- @ignore
