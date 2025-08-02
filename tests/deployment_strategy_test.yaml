@@ -34,12 +34,22 @@ tests:
           path: spec.template.spec.containers[0].volumeMounts
           count: 2
 
-  - it: should render correct container content
+  - it: should render correct content when using strategy Recreate
     template: templates/deployment.yaml
+    set:
+      strategy.type: Recreate
     asserts:
+      - hasDocuments:
+          count: 1
+      - exists:
+          path: spec.strategy
       - equal:
           path: spec.strategy.type
           value: Recreate
+
+  - it: should render correct container content
+    template: templates/deployment.yaml
+    asserts:
       - exists:
           path: spec.template.spec.containers
       - exists:
