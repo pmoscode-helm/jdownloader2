@@ -44,6 +44,10 @@ serviceAccount:
   name: ""
 
 # -- @ignore
+strategy:
+  # type: Recreate
+
+# -- @ignore
 podAnnotations: {}
 
 # -- @ignore
