@@ -1,78 +1,48 @@
-suite: test default deployment
+suite: test strategy deployment
 chart:
   version: 9.9.9+test
   appVersion: 9.9.9
 tests:
-  - it: should have correct metadata
+  - it: should not render strategy by default
     template: templates/deployment.yaml
     asserts:
-      - hasDocuments:
-          count: 1
-      - isAPIVersion:
-          of: apps/v1
-      - isKind:
-          of: Deployment
-      - equal:
-          path: metadata.labels["app.kubernetes.io/version"]
-          value: 9.9.9
-      - equal:
-          path: spec.template.spec.serviceAccountName
-          value: RELEASE-NAME-jdownloader2
-      - equal:
-          path: metadata.labels["helm.sh/chart"]
-          value: jdownloader2-9.9.9_test
+      - notExists:
+          path: spec.strategy
 
-  - it: should render volumes and volumeMounts correctly
-    template: templates/deployment.yaml
-    asserts:
-      - lengthEqual:
-          path: spec.template.spec.volumes
-          count: 1
-      - exists:
-          path: spec.template.spec.volumes[0].emptyDir
-      - lengthEqual:
-          path: spec.template.spec.containers[0].volumeMounts
-          count: 2
-
-  - it: should render correct content when using strategy Recreate
+  - it: should render correct strategy settings (Recreate)
     template: templates/deployment.yaml
     set:
       strategy.type: Recreate
     asserts:
-      - hasDocuments:
-          count: 1
       - exists:
-          path: spec.strategy
+          path: spec.strategy.type
       - equal:
           path: spec.strategy.type
           value: Recreate
+      - notExists:
+          path: spec.strategy.rollingUpdate.maxSurge
+      - notExists:
+          path: spec.strategy.rollingUpdate.maxUnavailable
 
-  - it: should render correct container content
+  - it: should render correct strategy settings (RollingUpdate)
     template: templates/deployment.yaml
+    set:
+      strategy.type: RollingUpdate
+      strategy.rollingUpdate.maxSurge: 2
+      strategy.rollingUpdate.maxUnavailable: 1
     asserts:
       - exists:
-          path: spec.template.spec.containers
+          path: spec.strategy.type
+      - equal:
+          path: spec.strategy.type
+          value: RollingUpdate
       - exists:
-          path: spec.template.spec.containers[0].readinessProbe
+          path: spec.strategy.rollingUpdate.maxSurge
+      - equal:
+          path: spec.strategy.rollingUpdate.maxSurge
+          value: 2
       - exists:
-          path: spec.template.spec.containers[0].livenessProbe
-      - contains:
-          path: spec.template.spec.containers[0].ports
-          content:
-            name: web
-            containerPort: 5800
-            protocol: TCP
-      - matchRegex:
-          path: spec.template.spec.containers[0].image
-          pattern: jlesage/jdownloader-2:.*
-      - isNotNullOrEmpty:
-          path: spec.template.spec.containers[0]
-      - lengthEqual:
-          path: spec.template.spec.containers[0].ports
-          count: 1
-      - isNullOrEmpty:
-          path: spec.template.spec.containers[0].resources
-      - notExists:
-          path: spec.template.spec.containers[0].env
-      - notExists:
-          path: spec.template.spec.containers[1]
+          path: spec.strategy.rollingUpdate.maxUnavailable
+      - equal:
+          path: spec.strategy.rollingUpdate.maxUnavailable
+          value: 1
