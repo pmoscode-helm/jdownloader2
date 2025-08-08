@@ -1,0 +1,48 @@
+suite: test strategy deployment
+chart:
+  version: 9.9.9+test
+  appVersion: 9.9.9
+tests:
+  - it: should not render strategy by default
+    template: templates/deployment.yaml
+    asserts:
+      - notExists:
+          path: spec.strategy
+
+  - it: should render correct strategy settings (Recreate)
+    template: templates/deployment.yaml
+    set:
+      strategy.type: Recreate
+    asserts:
+      - exists:
+          path: spec.strategy.type
+      - equal:
+          path: spec.strategy.type
+          value: Recreate
+      - notExists:
+          path: spec.strategy.rollingUpdate.maxSurge
+      - notExists:
+          path: spec.strategy.rollingUpdate.maxUnavailable
+
+  - it: should render correct strategy settings (RollingUpdate)
+    template: templates/deployment.yaml
+    set:
+      strategy.type: RollingUpdate
+      strategy.rollingUpdate.maxSurge: 2
+      strategy.rollingUpdate.maxUnavailable: 1
+    asserts:
+      - exists:
+          path: spec.strategy.type
+      - equal:
+          path: spec.strategy.type
+          value: RollingUpdate
+      - exists:
+          path: spec.strategy.rollingUpdate.maxSurge
+      - equal:
+          path: spec.strategy.rollingUpdate.maxSurge
+          value: 2
+      - exists:
+          path: spec.strategy.rollingUpdate.maxUnavailable
+      - equal:
+          path: spec.strategy.rollingUpdate.maxUnavailable
+          value: 1

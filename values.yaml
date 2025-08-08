@@ -44,6 +44,13 @@ serviceAccount:
   name: ""
 
 # -- @ignore
+strategy: {}
+  # type: RollingUpdate
+  # rollingUpdate:
+  #   maxSurge: 25%
+  #   maxUnavailable: 25%
+
+# -- @ignore
 podAnnotations: {}
 
 # -- @ignore
