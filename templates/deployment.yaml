@@ -5,8 +5,10 @@ metadata:
   labels:
     {{- include "jdownloader2-headless.labels" . | nindent 4 }}
 spec:
+  {{- if .Values.strategy }}
   strategy:
     {{- toYaml .Values.strategy | nindent 4 }}
+  {{- end }}
   replicas: 1
   selector:
     matchLabels:
