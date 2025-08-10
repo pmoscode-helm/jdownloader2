@@ -8,14 +8,30 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## Unreleased
 
-<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.4.0...HEAD)</small>
+<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.5.0...HEAD)</small>
 
 ### Features
 
-- bump docker image to v25.07.2 ([dcb57a2](https://github.com/pmoscode-helm/jdownloader2/commit/dcb57a25e29111cddf7219e08bc8cdc35e478f18) by Peter Motzko).
-- bump docker image to v25.07.1 ([7662cd1](https://github.com/pmoscode-helm/jdownloader2/commit/7662cd1f62dbcba5004c88353bf3ae8fb66288d3) by Peter Motzko).
+- add "strategy" config to deployment ([a5fb5ff](https://github.com/pmoscode-helm/jdownloader2/commit/a5fb5ffde63e333cd3c4aea4261ad4ab73ba1fbc) by Peter Motzko).
 
 <!-- insertion marker -->
+## [jdownloader2-1.5.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.5.0) - 2025-08-08
+
+<small>[Compare with jdownloader2-1.4.1](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.4.1...jdownloader2-1.5.0)</small>
+
+### Features
+
+- adding possibility to set deployment strategy (#58) ([87d0077](https://github.com/pmoscode-helm/jdownloader2/commit/87d00771698fa6bd066a29f31c98e638f1075e88) by Stephan).
+
+## [jdownloader2-1.4.1](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.4.1) - 2025-07-29
+
+<small>[Compare with jdownloader2-1.4.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.4.0...jdownloader2-1.4.1)</small>
+
+### Features
+
+- bump docker image to v25.07.2 ([94a4f3a](https://github.com/pmoscode-helm/jdownloader2/commit/94a4f3a226d32161472f1ab7bf7fd9d92a68b3a0) by Peter Motzko).
+- bump docker image to v25.07.1 ([7662cd1](https://github.com/pmoscode-helm/jdownloader2/commit/7662cd1f62dbcba5004c88353bf3ae8fb66288d3) by Peter Motzko).
+
 ## [jdownloader2-1.4.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.4.0) - 2025-06-26
 
 <small>[Compare with jdownloader2-1.3.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.3.0...jdownloader2-1.4.0)</small>
