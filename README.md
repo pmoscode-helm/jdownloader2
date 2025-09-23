@@ -34,6 +34,12 @@ See [helm uninstall](https://helm.sh/docs/helm/helm_uninstall/) for command docu
 
 See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command documentation.
 
+## Using the Web File Manager
+
+If the web file manager is enabled, you will find it here:
+
+![webFileManager](assets/webFileManager.png)
+
 ## Values
 
 | Key | Type | Default | Description |
