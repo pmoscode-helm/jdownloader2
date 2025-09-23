@@ -1,5 +1,5 @@
 # jdownloader2 Helm Chart
-![Version: 1.5.0](https://img.shields.io/badge/Version-1.5.0-informational?style=flat-square)
+![Version: 1.6.0](https://img.shields.io/badge/Version-1.6.0-informational?style=flat-square)
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/jdownloader2)](https://artifacthub.io/packages/search?repo=jdownloader2)
 
 From https://jdownloader.org/:
@@ -34,6 +34,12 @@ See [helm uninstall](https://helm.sh/docs/helm/helm_uninstall/) for command docu
 
 See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command documentation.
 
+## Using the Web File Manager
+
+If the web file manager is enabled, you will find it here:
+
+![webFileManager](assets/webFileManager.png)
+
 ## Values
 
 | Key | Type | Default | Description |
@@ -66,6 +72,9 @@ See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command document
 | serviceAccount.annotations | object | `{}` | add annotations to serviceAccount |
 | serviceAccount.create | bool | `true` | enable serviceAccount |
 | serviceAccount.name | string | `""` | name of the serviceAccount (will be generated if empty) |
+| webFileManager.allowedPaths | string | `"AUTO"` | a comma-separated list specifies which paths within the container are accessible (commonly used folders and any folders mapped to the container) |
+| webFileManager.deniedPaths | string | `""` | a comma-separated list specifies which paths within the container are not accessible (takes precedence over the ones configured in "allowedPaths") |
+| webFileManager.enabled | bool | `false` | enable the build-in web file manager |
 
 ## Maintainers
 

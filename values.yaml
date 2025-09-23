@@ -6,6 +6,14 @@ image:
   # -- pull policy
   pullPolicy: Always
 
+webFileManager:
+  # -- enable the build-in web file manager
+  enabled: false
+  # -- a comma-separated list specifies which paths within the container are accessible (commonly used folders and any folders mapped to the container)
+  allowedPaths: AUTO
+  # -- a comma-separated list specifies which paths within the container are not accessible (takes precedence over the ones configured in "allowedPaths")
+  deniedPaths: ""
+
 myjd:
   # -- (string) if "service.myjd" is enabled, the email address of the myJdownloader account is required
   email: ""

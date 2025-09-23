@@ -1,0 +1,49 @@
+suite: test deployment with web file manager enabled
+chart:
+  version: 9.9.9+test
+  appVersion: 9.9.9
+tests:
+  - it: should set required envs, if enabled
+    template: templates/deployment.yaml
+    set:
+      webFileManager.enabled: true
+    asserts:
+      - exists:
+          path: spec.template.spec.containers
+      - exists:
+          path: spec.template.spec.containers[0].env
+      - lengthEqual:
+          path: spec.template.spec.containers[0].env
+          count: 2
+      - equal:
+          path: spec.template.spec.containers[0].env[0].name
+          value: WEB_FILE_MANAGER
+      - equal:
+          path: spec.template.spec.containers[0].env[0].value
+          value: "1"
+      - equal:
+          path: spec.template.spec.containers[0].env[1].name
+          value: WEB_FILE_MANAGER_ALLOWED_PATHS
+      - equal:
+          path: spec.template.spec.containers[0].env[1].value
+          value: "AUTO"
+
+  - it: should add denied path to env, if prop is set
+    template: templates/deployment.yaml
+    set:
+      webFileManager.enabled: true
+      webFileManager.deniedPaths: "/etc"
+    asserts:
+      - exists:
+          path: spec.template.spec.containers
+      - exists:
+          path: spec.template.spec.containers[0].env
+      - lengthEqual:
+          path: spec.template.spec.containers[0].env
+          count: 3
+      - equal:
+          path: spec.template.spec.containers[0].env[2].name
+          value: WEB_FILE_MANAGER_DENIED_PATHS
+      - equal:
+          path: spec.template.spec.containers[0].env[2].value
+          value: "/etc"
