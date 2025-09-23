@@ -18,6 +18,43 @@ entries:
           email: info@pmoscode.de
     apiVersion: v2
     appVersion: v25.07.2
+    created: "2025-09-23T19:58:09.355424+02:00"
+    description: jDownloader2 Helm chart for Kubernetes. "JDownloader is a free, open-source
+      download management tool with a huge community that makes downloading as easy
+      and fast as it should be. Users can start, stop or pause downloads, set bandwith
+      limitations, auto-extract archives and much more. It's an easy-to-extend framework
+      that can save hours of your valuable time every day!"
+    digest: fb0fe152b7134fd555493390f4822e74040c79061d7490f07bc2e8692664691d
+    home: https://jdownloader.org/
+    icon: https://github.com/pmoscode-helm/jdownloader2/raw/main/assets/logo.png
+    maintainers:
+    - email: info@pmoscode.de
+      name: pmoscode
+      url: https://pmoscode.de
+    name: jdownloader2
+    sources:
+    - https://jdownloader.org/
+    type: application
+    urls:
+    - https://github.com/pmoscode-helm/jdownloader2/releases/download/jdownloader2-1.6.0/jdownloader2-1.6.0.tgz
+    version: 1.6.0
+  - annotations:
+      artifacthub.io/images: |
+        - name: jdownloader2
+          image: jlesage/jdownloader-2:v25.07.2
+          platforms:
+            - linux/amd64
+      artifacthub.io/license: MIT
+      artifacthub.io/links: |
+        - name: Source
+          url: https://github.com/pmoscode-helm/jdownloader2
+        - name: support
+          url: https://github.com/pmoscode-helm/jdownloader2/issues
+      artifacthub.io/maintainers: |
+        - name: pmoscode
+          email: info@pmoscode.de
+    apiVersion: v2
+    appVersion: v25.07.2
     created: "2025-08-10T18:50:56.037244+02:00"
     description: jDownloader2 Helm chart for Kubernetes. "JDownloader is a free, open-source
       download management tool with a huge community that makes downloading as easy
@@ -778,4 +815,4 @@ entries:
     urls:
     - https://github.com/pmoscode/jdownloader2/releases/download/jdownloader2-0.1.0/jdownloader2-0.1.0.tgz
     version: 0.1.0
-generated: "2025-08-10T18:50:56.037385+02:00"
+generated: "2025-09-23T19:58:09.355659+02:00"
