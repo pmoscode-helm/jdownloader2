@@ -12,7 +12,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Features
 
-- add "strategy" config to deployment ([a5fb5ff](https://github.com/pmoscode-helm/jdownloader2/commit/a5fb5ffde63e333cd3c4aea4261ad4ab73ba1fbc) by Peter Motzko).
+- add web file manager config ([7d05c57](https://github.com/pmoscode-helm/jdownloader2/commit/7d05c57692fea9f83b2f7f761980b804590ac2a6) by Peter Motzko).
+- add "strategy" config to deployment ([401beb0](https://github.com/pmoscode-helm/jdownloader2/commit/401beb033acabfcf1a8db9e8d2ca8523253291b2) by Peter Motzko).
 
 <!-- insertion marker -->
 ## [jdownloader2-1.5.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.5.0) - 2025-08-08
