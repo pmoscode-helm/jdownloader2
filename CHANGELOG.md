@@ -8,14 +8,23 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## Unreleased
 
-<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.5.0...HEAD)</small>
+<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.6.0...HEAD)</small>
+
+### Features
+
+- bump docker image to v25.12.1 ([69da128](https://github.com/pmoscode-helm/jdownloader2/commit/69da1281bf66ace6763365ef0d7bd5199882e89b) by Peter Motzko).
+- add web file manager config ([b00343f](https://github.com/pmoscode-helm/jdownloader2/commit/b00343f4e718f0e3af10059015c2c317e3855294) by Peter Motzko).
+
+<!-- insertion marker -->
+## [jdownloader2-1.6.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.6.0) - 2025-09-23
+
+<small>[Compare with jdownloader2-1.5.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.5.0...jdownloader2-1.6.0)</small>
 
 ### Features
 
 - add web file manager config ([7d05c57](https://github.com/pmoscode-helm/jdownloader2/commit/7d05c57692fea9f83b2f7f761980b804590ac2a6) by Peter Motzko).
 - add "strategy" config to deployment ([401beb0](https://github.com/pmoscode-helm/jdownloader2/commit/401beb033acabfcf1a8db9e8d2ca8523253291b2) by Peter Motzko).
 
-<!-- insertion marker -->
 ## [jdownloader2-1.5.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.5.0) - 2025-08-08
 
 <small>[Compare with jdownloader2-1.4.1](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.4.1...jdownloader2-1.5.0)</small>
