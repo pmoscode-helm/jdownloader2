@@ -12,7 +12,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Features
 
-- bump docker image to v25.12.1 ([69da128](https://github.com/pmoscode-helm/jdownloader2/commit/69da1281bf66ace6763365ef0d7bd5199882e89b) by Peter Motzko).
+- bump docker image to v25.12.2 ([4ea06d5](https://github.com/pmoscode-helm/jdownloader2/commit/4ea06d5ec363638812c11748455803c784071656) by Peter Motzko).
+- bump docker image to v25.12.1 ([dee9eea](https://github.com/pmoscode-helm/jdownloader2/commit/dee9eeae8ffa32ae5b6c24ca7a1fa533234991b5) by Peter Motzko).
 - add web file manager config ([b00343f](https://github.com/pmoscode-helm/jdownloader2/commit/b00343f4e718f0e3af10059015c2c317e3855294) by Peter Motzko).
 
 <!-- insertion marker -->
