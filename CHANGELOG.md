@@ -8,15 +8,23 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## Unreleased
 
-<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.6.0...HEAD)</small>
+<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.7.1...HEAD)</small>
 
 ### Features
 
-- bump docker image to v25.12.2 ([4ea06d5](https://github.com/pmoscode-helm/jdownloader2/commit/4ea06d5ec363638812c11748455803c784071656) by Peter Motzko).
+- bump docker image to v25.12.3 ([03305e1](https://github.com/pmoscode-helm/jdownloader2/commit/03305e1b13cc0c0ce55d03fae708da685f1402de) by Peter Motzko).
+- bump docker image to v25.12.2 ([7010203](https://github.com/pmoscode-helm/jdownloader2/commit/7010203f08627afd612ee479096672c46a0487fe) by Peter Motzko).
+
+<!-- insertion marker -->
+## [jdownloader2-1.7.1](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.7.1) - 2025-12-09
+
+<small>[Compare with jdownloader2-1.6.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.6.0...jdownloader2-1.7.1)</small>
+
+### Features
+
 - bump docker image to v25.12.1 ([dee9eea](https://github.com/pmoscode-helm/jdownloader2/commit/dee9eeae8ffa32ae5b6c24ca7a1fa533234991b5) by Peter Motzko).
 - add web file manager config ([b00343f](https://github.com/pmoscode-helm/jdownloader2/commit/b00343f4e718f0e3af10059015c2c317e3855294) by Peter Motzko).
 
-<!-- insertion marker -->
 ## [jdownloader2-1.6.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.6.0) - 2025-09-23
 
 <small>[Compare with jdownloader2-1.5.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.5.0...jdownloader2-1.6.0)</small>
