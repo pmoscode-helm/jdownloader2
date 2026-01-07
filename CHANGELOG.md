@@ -8,14 +8,22 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## Unreleased
 
-<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.7.1...HEAD)</small>
+<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.7.2...HEAD)</small>
 
 ### Features
 
-- bump docker image to v25.12.3 ([03305e1](https://github.com/pmoscode-helm/jdownloader2/commit/03305e1b13cc0c0ce55d03fae708da685f1402de) by Peter Motzko).
-- bump docker image to v25.12.2 ([7010203](https://github.com/pmoscode-helm/jdownloader2/commit/7010203f08627afd612ee479096672c46a0487fe) by Peter Motzko).
+- bump docker image to v26.01.1 ([8adc860](https://github.com/pmoscode-helm/jdownloader2/commit/8adc8602bc4cef5106344aae2f03b1ab308c0716) by Peter Motzko).
 
 <!-- insertion marker -->
+## [jdownloader2-1.7.2](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.7.2) - 2025-12-25
+
+<small>[Compare with jdownloader2-1.7.1](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.7.1...jdownloader2-1.7.2)</small>
+
+### Features
+
+- bump docker image to v25.12.3 ([6da3107](https://github.com/pmoscode-helm/jdownloader2/commit/6da31072b51b0936d88f9fd78ac84d525945bfa6) by Peter Motzko).
+- bump docker image to v25.12.2 ([7010203](https://github.com/pmoscode-helm/jdownloader2/commit/7010203f08627afd612ee479096672c46a0487fe) by Peter Motzko).
+
 ## [jdownloader2-1.7.1](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.7.1) - 2025-12-09
 
 <small>[Compare with jdownloader2-1.6.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.6.0...jdownloader2-1.7.1)</small>
