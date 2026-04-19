@@ -8,13 +8,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## Unreleased
 
-<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.8.0...HEAD)</small>
+<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.9.0...HEAD)</small>
 
 ### Features
 
-- update version to 1.9.0 and bump appVersion to v26.02.2 ([66c101f](https://github.com/pmoscode-helm/jdownloader2/commit/66c101f7f091454d0f5f7a6ef5bbbb6a7953ac6d) by Peter Motzko).
+- update version to 1.10.0 and bump appVersion to v26.03.1 ([16f3342](https://github.com/pmoscode-helm/jdownloader2/commit/16f33429c33226657f5c3baa3a91a4e2cf796004) by Peter Motzko).
 
 <!-- insertion marker -->
+## [jdownloader2-1.9.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.9.0) - 2026-02-20
+
+<small>[Compare with jdownloader2-1.8.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.8.0...jdownloader2-1.9.0)</small>
+
+### Features
+
+- update version to 1.9.0 and bump appVersion to v26.02.2 ([2f110d0](https://github.com/pmoscode-helm/jdownloader2/commit/2f110d058b5f55a9bd5316e141e7f38519d06ef9) by Peter Motzko).
+
 ## [jdownloader2-1.8.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.8.0) - 2026-01-07
 
 <small>[Compare with jdownloader2-1.7.2](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.7.2...jdownloader2-1.8.0)</small>
