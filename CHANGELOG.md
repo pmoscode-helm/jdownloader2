@@ -8,176 +8,34 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## Unreleased
 
-<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.9.0...HEAD)</small>
+<small>[Compare with latest](https://github.com/pmoscode-helm/jdownloader2/compare/a380671a24b0691631682b0fc9eb63c8036d02fd...HEAD)</small>
 
 ### Features
 
-- update version to 1.10.0 and bump appVersion to v26.03.1 ([16f3342](https://github.com/pmoscode-helm/jdownloader2/commit/16f33429c33226657f5c3baa3a91a4e2cf796004) by Peter Motzko).
-
-<!-- insertion marker -->
-## [jdownloader2-1.9.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.9.0) - 2026-02-20
-
-<small>[Compare with jdownloader2-1.8.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.8.0...jdownloader2-1.9.0)</small>
-
-### Features
-
+- update version to 1.11.0 and bump appVersion to v26.07.2 ([681cf96](https://github.com/pmoscode-helm/jdownloader2/commit/681cf9616cbfc52e58ecd63a28a2aca3aeef62fe) by Peter Motzko).
+- update version to 1.10.0 and bump appVersion to v26.03.1 ([2209a1d](https://github.com/pmoscode-helm/jdownloader2/commit/2209a1d78f942bd1157966767ff95419d490e672) by Peter Motzko).
 - update version to 1.9.0 and bump appVersion to v26.02.2 ([2f110d0](https://github.com/pmoscode-helm/jdownloader2/commit/2f110d058b5f55a9bd5316e141e7f38519d06ef9) by Peter Motzko).
-
-## [jdownloader2-1.8.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.8.0) - 2026-01-07
-
-<small>[Compare with jdownloader2-1.7.2](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.7.2...jdownloader2-1.8.0)</small>
-
-### Features
-
 - bump docker image to v26.01.1 ([b7325a3](https://github.com/pmoscode-helm/jdownloader2/commit/b7325a3cbb5e2772de837fe152d6788df70af9c0) by Peter Motzko).
-
-## [jdownloader2-1.7.2](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.7.2) - 2025-12-25
-
-<small>[Compare with jdownloader2-1.7.1](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.7.1...jdownloader2-1.7.2)</small>
-
-### Features
-
 - bump docker image to v25.12.3 ([6da3107](https://github.com/pmoscode-helm/jdownloader2/commit/6da31072b51b0936d88f9fd78ac84d525945bfa6) by Peter Motzko).
 - bump docker image to v25.12.2 ([7010203](https://github.com/pmoscode-helm/jdownloader2/commit/7010203f08627afd612ee479096672c46a0487fe) by Peter Motzko).
-
-## [jdownloader2-1.7.1](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.7.1) - 2025-12-09
-
-<small>[Compare with jdownloader2-1.6.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.6.0...jdownloader2-1.7.1)</small>
-
-### Features
-
 - bump docker image to v25.12.1 ([dee9eea](https://github.com/pmoscode-helm/jdownloader2/commit/dee9eeae8ffa32ae5b6c24ca7a1fa533234991b5) by Peter Motzko).
 - add web file manager config ([b00343f](https://github.com/pmoscode-helm/jdownloader2/commit/b00343f4e718f0e3af10059015c2c317e3855294) by Peter Motzko).
-
-## [jdownloader2-1.6.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.6.0) - 2025-09-23
-
-<small>[Compare with jdownloader2-1.5.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.5.0...jdownloader2-1.6.0)</small>
-
-### Features
-
-- add web file manager config ([7d05c57](https://github.com/pmoscode-helm/jdownloader2/commit/7d05c57692fea9f83b2f7f761980b804590ac2a6) by Peter Motzko).
 - add "strategy" config to deployment ([401beb0](https://github.com/pmoscode-helm/jdownloader2/commit/401beb033acabfcf1a8db9e8d2ca8523253291b2) by Peter Motzko).
-
-## [jdownloader2-1.5.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.5.0) - 2025-08-08
-
-<small>[Compare with jdownloader2-1.4.1](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.4.1...jdownloader2-1.5.0)</small>
-
-### Features
-
 - adding possibility to set deployment strategy (#58) ([87d0077](https://github.com/pmoscode-helm/jdownloader2/commit/87d00771698fa6bd066a29f31c98e638f1075e88) by Stephan).
-
-## [jdownloader2-1.4.1](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.4.1) - 2025-07-29
-
-<small>[Compare with jdownloader2-1.4.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.4.0...jdownloader2-1.4.1)</small>
-
-### Features
-
 - bump docker image to v25.07.2 ([94a4f3a](https://github.com/pmoscode-helm/jdownloader2/commit/94a4f3a226d32161472f1ab7bf7fd9d92a68b3a0) by Peter Motzko).
 - bump docker image to v25.07.1 ([7662cd1](https://github.com/pmoscode-helm/jdownloader2/commit/7662cd1f62dbcba5004c88353bf3ae8fb66288d3) by Peter Motzko).
-
-## [jdownloader2-1.4.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.4.0) - 2025-06-26
-
-<small>[Compare with jdownloader2-1.3.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.3.0...jdownloader2-1.4.0)</small>
-
-### Features
-
 - bump docker image to v25.06.2 ([15e28aa](https://github.com/pmoscode-helm/jdownloader2/commit/15e28aaa7439f050e35edcc9ae45bce0873b3da1) by Peter Motzko).
 - bump docker image to v25.06.1 ([1617ccd](https://github.com/pmoscode-helm/jdownloader2/commit/1617ccd065af67fbb52d1680e5273bb2e53cb765) by Peter Motzko).
-
-## [jdownloader2-1.3.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.3.0) - 2025-06-22
-
-<small>[Compare with jdownloader2-1.2.1](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-1.2.1...jdownloader2-1.3.0)</small>
-
-### Features
-
-- bump docker image to v25.06.1 ([d034fec](https://github.com/pmoscode-helm/jdownloader2/commit/d034fecab3f725eb8f2bbf068b1f5639ca2dc530) by Peter Motzko).
 - bump docker image to v25.02.1 ([2486fa4](https://github.com/pmoscode-helm/jdownloader2/commit/2486fa42fdc2430d090c4b63253d79b1a7954658) by Peter Motzko).
-
-## [jdownloader2-1.2.1](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-1.2.1) - 2025-01-31
-
-<small>[Compare with jdownloader2-0.13.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.13.0...jdownloader2-1.2.1)</small>
-
-## [jdownloader2-0.13.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.13.0) - 2024-12-08
-
-<small>[Compare with jdownloader2-0.12.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.12.0...jdownloader2-0.13.0)</small>
-
-### Features
-
 - update to v24.12.1 ([e8f8440](https://github.com/pmoscode-helm/jdownloader2/commit/e8f8440499c4cdfc0aaac122d4a29e03fb544c0b) by Peter Motzko).
 - bump docker image to v24.11.1 ([1a5bf63](https://github.com/pmoscode-helm/jdownloader2/commit/1a5bf636ec301bbab2c64f97dc96987731181eac) by Peter Motzko).
-
-## [jdownloader2-0.12.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.12.0) - 2024-11-23
-
-<small>[Compare with jdownloader2-0.11.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.11.0...jdownloader2-0.12.0)</small>
-
-### Features
-
-- bump docker image to v24.11.1 ([b4dd198](https://github.com/pmoscode-helm/jdownloader2/commit/b4dd198f225b2ed146afd4bedd6d04c94085e8e9) by Peter Motzko).
-
-### Bug Fixes
-
-- icon location ([d2ac06c](https://github.com/pmoscode-helm/jdownloader2/commit/d2ac06c01c74f64acc8cce3e9f8ecc073b0c66cb) by Peter Motzko).
-
-## [jdownloader2-0.11.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.11.0) - 2024-10-17
-
-<small>[Compare with jdownloader2-0.10.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.10.0...jdownloader2-0.11.0)</small>
-
-### Features
-
 - add config for additional volumes and volume-mounts ([b243bd2](https://github.com/pmoscode-helm/jdownloader2/commit/b243bd2404857ae8c03158f31aa003e73b062d5c) by Peter Motzko).
-
-## [jdownloader2-0.10.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.10.0) - 2024-10-15
-
-<small>[Compare with jdownloader2-0.8.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.8.0...jdownloader2-0.10.0)</small>
-
-### Features
-
 - add ability to use an existing secret for the myjd service ([42a0fcb](https://github.com/pmoscode-helm/jdownloader2/commit/42a0fcb7bad4aa02718b672bda4bfbd7f9e9a8e7) by Peter Motzko).
 - bump docker image to v24.09.1 ([8e47094](https://github.com/pmoscode-helm/jdownloader2/commit/8e470942bfdd9fee5f37a51266349c20db71a501) by Peter Motzko).
-
-## [jdownloader2-0.8.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.8.0) - 2024-08-03
-
-<small>[Compare with jdownloader2-0.7.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.7.0...jdownloader2-0.8.0)</small>
-
-## [jdownloader2-0.7.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.7.0) - 2024-07-04
-
-<small>[Compare with jdownloader2-0.6.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.6.0...jdownloader2-0.7.0)</small>
-
-### Features
-
 - bump docker image to v24.07.1 ([e69490b](https://github.com/pmoscode-helm/jdownloader2/commit/e69490b9a82f4a3c99b9e7c79e84d0e22e417da2) by Peter Motzko).
-
-## [jdownloader2-0.6.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.6.0) - 2024-01-26
-
-<small>[Compare with jdownloader2-0.5.1](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.5.1...jdownloader2-0.6.0)</small>
-
-### Features
-
 - bump docker image to v24.01.1 ([d5d7f4a](https://github.com/pmoscode-helm/jdownloader2/commit/d5d7f4ac0c354628792f421e76815f7b42c59f5e) by Peter Motzko).
-
-## [jdownloader2-0.5.1](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.5.1) - 2023-12-27
-
-<small>[Compare with jdownloader2-0.5.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.5.0...jdownloader2-0.5.1)</small>
-
-### Features
-
 - bump docker image to v23.12.2 ([59c7221](https://github.com/pmoscode-helm/jdownloader2/commit/59c7221fd598d5d0769388cae8bf335ceb0c4089) by Peter Motzko).
 - bump docker image to v23.12.1 ([270fbb8](https://github.com/pmoscode-helm/jdownloader2/commit/270fbb8ef50af852a1598425ca48fe4cba0e33ed) by Peter Motzko).
-
-## [jdownloader2-0.5.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.5.0) - 2023-12-15
-
-<small>[Compare with jdownloader2-0.4.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.4.0...jdownloader2-0.5.0)</small>
-
-### Bug Fixes
-
-- add more files to .helmignore ([c45c70f](https://github.com/pmoscode-helm/jdownloader2/commit/c45c70feac262b0440a39d71940e7194eab7a559) by Peter Motzko).
-
-## [jdownloader2-0.4.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.4.0) - 2023-11-28
-
-<small>[Compare with jdownloader2-0.3.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.3.0...jdownloader2-0.4.0)</small>
-
-### Features
-
 - add Helm chart image update check ([0949b84](https://github.com/pmoscode-helm/jdownloader2/commit/0949b84aff5a3c30823bbf4598c761cf9582344c) by Peter Motzko).
 - add renovate.json to .helmignore ([6f57ff6](https://github.com/pmoscode-helm/jdownloader2/commit/6f57ff61bdb549b366914ee5a8d595f9c2545c57) by Peter Motzko).
 - add Trivy scan action ([30c26f5](https://github.com/pmoscode-helm/jdownloader2/commit/30c26f54fb77920de97a78e5a14c4e59a1ccf5a6) by Peter Motzko).
@@ -199,33 +57,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Add task to generate CHANGELOG.md ([19254bd](https://github.com/pmoscode-helm/jdownloader2/commit/19254bd5ad83dad3213ef826eb0607ce50f359cc) by Peter Motzko).
 - Add generated CHANGELOG.md ([381563a](https://github.com/pmoscode-helm/jdownloader2/commit/381563aa43a68d6c921710733830bfb68a87def4) by Peter Motzko).
 - Remove index.yaml after "cr index" is done ([7421138](https://github.com/pmoscode-helm/jdownloader2/commit/74211380cbfdcba249e0d34dd3dbe36da0615312) by Peter Motzko).
-
-### Bug Fixes
-
-- update hcuc to 0.1.1 due to a version parse error ([a5e434e](https://github.com/pmoscode-helm/jdownloader2/commit/a5e434ec52b8a662a35ab68bb2c817227ec8d8ec) by Peter Motzko).
-- add more files to .helmignore ([6ed6b78](https://github.com/pmoscode-helm/jdownloader2/commit/6ed6b7889d17be2e09a85c7a06d772388f6bb7d3) by Peter Motzko).
-- Correct capitalization of Taskfile in README.md ([66c4302](https://github.com/pmoscode-helm/jdownloader2/commit/66c4302650f0721a862a433aa094295e0d93366f) by Peter Motzko).
-- add missing serviceName postfix for "web"-service ([059236d](https://github.com/pmoscode-helm/jdownloader2/commit/059236d98bea7ac033c02b21c654a7fefd973eaa) by Peter Motzko).
-- don't fail job when checks fail and only show failed checks ([843ab21](https://github.com/pmoscode-helm/jdownloader2/commit/843ab215d2f40904e3867cbaada636c0bf056331) by Peter Motzko).
-- change version for kubesec action ([b68799b](https://github.com/pmoscode-helm/jdownloader2/commit/b68799b59c09406d86fb12095791103b4581bdc7) by Peter Motzko).
-- use correct template ([a81ee37](https://github.com/pmoscode-helm/jdownloader2/commit/a81ee378527dc5ef31d373bc9f8bbdfef4027704) by Peter Motzko).
-- use generated templates ror kubesec ([1a7e8dd](https://github.com/pmoscode-helm/jdownloader2/commit/1a7e8dd27e163fb7020f7b8e3e60b5a5dc90db5e) by Peter Motzko).
-- typo ([3be102f](https://github.com/pmoscode-helm/jdownloader2/commit/3be102f28c8b8fafd7760e693766c5f2f71d3bd8) by Peter Motzko).
-- try fix error in Kubesec scan ([044f1c7](https://github.com/pmoscode-helm/jdownloader2/commit/044f1c716434eb697d89ddab4ded7df1e5ddde9b) by Peter Motzko).
-- missing slash in CONTRIBUTING.md ([d501be9](https://github.com/pmoscode-helm/jdownloader2/commit/d501be9a405cb17fdf34d6d8b4273aec373b25b4) by Peter Motzko).
-- wrong config ([3c0906e](https://github.com/pmoscode-helm/jdownloader2/commit/3c0906e59e08abbe4a8b3a32cb5a32439b8e3f2d) by Peter Motzko).
-
-### Code Refactoring
-
-- uninstall pre-commit before creating index ([40e07ee](https://github.com/pmoscode-helm/jdownloader2/commit/40e07ee922f0af42a1b921ca7ba207e9fb666de0) by Peter Motzko).
-
-## [jdownloader2-0.3.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.3.0) - 2023-04-24
-
-<small>[Compare with jdownloader2-0.2.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.2.0...jdownloader2-0.3.0)</small>
-
-### Features
-
-- update README.md ([4a790dd](https://github.com/pmoscode-helm/jdownloader2/commit/4a790dd355c9e784fff669acfd37b39691d32d81) by Peter Motzko).
 - Bump minor version ([671bb44](https://github.com/pmoscode-helm/jdownloader2/commit/671bb44f746f3da8409fb1057b952918b9cb85eb) by Peter Motzko).
 - Add more tests for all resources (except serviceAccount) ([5f8312c](https://github.com/pmoscode-helm/jdownloader2/commit/5f8312cffba810bc86792cb5839eeebcf4127193) by Peter Motzko).
 - Remove unnecessary values + change default type for web-service ([e6d5fac](https://github.com/pmoscode-helm/jdownloader2/commit/e6d5fac19f440618e9e70569aaeb23b9031a5000) by Peter Motzko).
@@ -236,31 +67,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Add Taskfile for simplify chart publishing ([5437819](https://github.com/pmoscode-helm/jdownloader2/commit/543781916bd025c4b25b1eb4350415915d62660a) by Peter Motzko).
 - Add .env for simplify chart publishing ([9881cb5](https://github.com/pmoscode-helm/jdownloader2/commit/9881cb51a4420fbaaaa09a46454c2e1d1dd68810) by Peter Motzko).
 - Add Helm unittests for the first templates (WIP) ([c51de91](https://github.com/pmoscode-helm/jdownloader2/commit/c51de914401af076d4417478e38749a2aa1f92ad) by Peter Motzko).
-
-## [jdownloader2-0.2.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.2.0) - 2023-04-22
-
-<small>[Compare with jdownloader2-0.1.1](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.1.1...jdownloader2-0.2.0)</small>
-
-### Features
-
-- bump minor version ([04759d9](https://github.com/pmoscode-helm/jdownloader2/commit/04759d9d6e15c89424de89d9a39c00a3a645a8f9) by Peter Motzko).
-- update README.md ([703a67c](https://github.com/pmoscode-helm/jdownloader2/commit/703a67cd55d6f4688868bdee84d3353e782c961d) by Peter Motzko).
-
-## [jdownloader2-0.1.1](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.1.1) - 2023-04-20
-
-<small>[Compare with jdownloader2-0.1.0](https://github.com/pmoscode-helm/jdownloader2/compare/jdownloader2-0.1.0...jdownloader2-0.1.1)</small>
-
-### Features
-
 - Update Chart and Readme ([13eca30](https://github.com/pmoscode-helm/jdownloader2/commit/13eca309502ec4ad04167788b20a64673199ba82) by Peter Motzko).
 - Update repositoryID ([45b1253](https://github.com/pmoscode-helm/jdownloader2/commit/45b1253cb6914d7a444c3b99f9cec5d2497b44e2) by Peter Motzko).
-
-## [jdownloader2-0.1.0](https://github.com/pmoscode-helm/jdownloader2/releases/tag/jdownloader2-0.1.0) - 2023-04-18
-
-<small>[Compare with first commit](https://github.com/pmoscode-helm/jdownloader2/compare/a380671a24b0691631682b0fc9eb63c8036d02fd...jdownloader2-0.1.0)</small>
-
-### Features
-
 - Delete stuff from GitLab ([ee3dcc7](https://github.com/pmoscode-helm/jdownloader2/commit/ee3dcc766523d527eaeb81792aedd80a6f53fdc9) by Peter Motzko).
 - Adjust chart icon ([410ac00](https://github.com/pmoscode-helm/jdownloader2/commit/410ac00e32fec031af0140b7b7b451d5cdc03e61) by Peter Motzko).
 - Adjust ArtifactID ([a2527e4](https://github.com/pmoscode-helm/jdownloader2/commit/a2527e42d4c565d5e3bb9259ca612747357cbb24) by Peter Motzko).
@@ -281,8 +89,26 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Bug Fixes
 
+- icon location ([d2ac06c](https://github.com/pmoscode-helm/jdownloader2/commit/d2ac06c01c74f64acc8cce3e9f8ecc073b0c66cb) by Peter Motzko).
+- add more files to .helmignore ([c45c70f](https://github.com/pmoscode-helm/jdownloader2/commit/c45c70feac262b0440a39d71940e7194eab7a559) by Peter Motzko).
+- update hcuc to 0.1.1 due to a version parse error ([a5e434e](https://github.com/pmoscode-helm/jdownloader2/commit/a5e434ec52b8a662a35ab68bb2c817227ec8d8ec) by Peter Motzko).
+- Correct capitalization of Taskfile in README.md ([66c4302](https://github.com/pmoscode-helm/jdownloader2/commit/66c4302650f0721a862a433aa094295e0d93366f) by Peter Motzko).
+- add missing serviceName postfix for "web"-service ([059236d](https://github.com/pmoscode-helm/jdownloader2/commit/059236d98bea7ac033c02b21c654a7fefd973eaa) by Peter Motzko).
+- don't fail job when checks fail and only show failed checks ([843ab21](https://github.com/pmoscode-helm/jdownloader2/commit/843ab215d2f40904e3867cbaada636c0bf056331) by Peter Motzko).
+- change version for kubesec action ([b68799b](https://github.com/pmoscode-helm/jdownloader2/commit/b68799b59c09406d86fb12095791103b4581bdc7) by Peter Motzko).
+- use correct template ([a81ee37](https://github.com/pmoscode-helm/jdownloader2/commit/a81ee378527dc5ef31d373bc9f8bbdfef4027704) by Peter Motzko).
+- use generated templates ror kubesec ([1a7e8dd](https://github.com/pmoscode-helm/jdownloader2/commit/1a7e8dd27e163fb7020f7b8e3e60b5a5dc90db5e) by Peter Motzko).
+- typo ([3be102f](https://github.com/pmoscode-helm/jdownloader2/commit/3be102f28c8b8fafd7760e693766c5f2f71d3bd8) by Peter Motzko).
+- try fix error in Kubesec scan ([044f1c7](https://github.com/pmoscode-helm/jdownloader2/commit/044f1c716434eb697d89ddab4ded7df1e5ddde9b) by Peter Motzko).
+- missing slash in CONTRIBUTING.md ([d501be9](https://github.com/pmoscode-helm/jdownloader2/commit/d501be9a405cb17fdf34d6d8b4273aec373b25b4) by Peter Motzko).
+- wrong config ([3c0906e](https://github.com/pmoscode-helm/jdownloader2/commit/3c0906e59e08abbe4a8b3a32cb5a32439b8e3f2d) by Peter Motzko).
 - Change helm repo url after migration to GitHub ([6575ec8](https://github.com/pmoscode-helm/jdownloader2/commit/6575ec890eb217692b6ccef258061f6f15f50efb) by Peter Motzko).
 - Add empty string ([bd38e93](https://github.com/pmoscode-helm/jdownloader2/commit/bd38e93b91e9cc74caf2824826c4c7538d42d39c) by Peter Motzko).
 - Remove duplicate JDownloader link ([efd7dd6](https://github.com/pmoscode-helm/jdownloader2/commit/efd7dd638d9e69f33f4ae34e57df060fd39b88e3) by Peter Motzko).
 - Icon URL ([4500ce0](https://github.com/pmoscode-helm/jdownloader2/commit/4500ce05e5a5313abfec1187af4fd92bb96326ce) by Peter Motzko).
 
+### Code Refactoring
+
+- uninstall pre-commit before creating index ([40e07ee](https://github.com/pmoscode-helm/jdownloader2/commit/40e07ee922f0af42a1b921ca7ba207e9fb666de0) by Peter Motzko).
+
+<!-- insertion marker -->
