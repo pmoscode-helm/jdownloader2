@@ -12,7 +12,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Features
 
-- update version to 1.11.0 and bump appVersion to v26.07.2 ([681cf96](https://github.com/pmoscode-helm/jdownloader2/commit/681cf9616cbfc52e58ecd63a28a2aca3aeef62fe) by Peter Motzko).
+- update version to 1.12.0 and bump appVersion to v26.09.1 ([ad9cf19](https://github.com/pmoscode-helm/jdownloader2/commit/ad9cf1955e9ae3781e8d3ec9985e11ce8ca88beb) by Peter Motzko).
+- update version to 1.11.0 and bump appVersion to v26.07.2 ([0e779ee](https://github.com/pmoscode-helm/jdownloader2/commit/0e779ee6f6bc51f3d7c9fbeb4f9587937ccf463d) by Peter Motzko).
 - update version to 1.10.0 and bump appVersion to v26.03.1 ([2209a1d](https://github.com/pmoscode-helm/jdownloader2/commit/2209a1d78f942bd1157966767ff95419d490e672) by Peter Motzko).
 - update version to 1.9.0 and bump appVersion to v26.02.2 ([2f110d0](https://github.com/pmoscode-helm/jdownloader2/commit/2f110d058b5f55a9bd5316e141e7f38519d06ef9) by Peter Motzko).
 - bump docker image to v26.01.1 ([b7325a3](https://github.com/pmoscode-helm/jdownloader2/commit/b7325a3cbb5e2772de837fe152d6788df70af9c0) by Peter Motzko).
